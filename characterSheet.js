@@ -404,25 +404,25 @@ function calculateBar(current, max) {
 function calcDice(ability, dice) {
 
   const table = [
-    { normal: 9 },
-    { normal: 8, good: 9 },
-    { normal: 7, good: 9 },
-    { normal: 6, good: 8 },
-    { normal: 5, good: 8, extreme: 9 },
-    { normal: 4, good: 7, extreme: 9 },
-    { normal: 3, good: 7, extreme: 18 },
-    { normal: 2, good: 6, extreme: 17 },
-    { normal: 1, good: 6, extreme: 17 },
-    { normal: 0, good: 5, extreme: 17 },
-    { normal: 0, good: 5, extreme: 16 },
-    { normal: 0, good: 4, extreme: 16 },
-    { normal: 0, good: 4, extreme: 16 },
-    { normal: 0, good: 3, extreme: 15 },
-    { normal: 0, good: 3, extreme: 15 },
-    { normal: 0, good: 2, extreme: 15 },
-    { normal: 0, good: 2, extreme: 14 },
-    { normal: 0, good: 1, extreme: 14 },
-    { normal: 0, good: 1, extreme: 13 },
+    { normal: 18 },
+    { normal: 17, good: 18 },
+    { normal: 16, good: 18 },
+    { normal: 15, good: 17 },
+    { normal: 14, good: 17, extreme: 18 },
+    { normal: 13, good: 16, extreme: 18 },
+    { normal: 12, good: 16, extreme: 36 },
+    { normal: 11, good: 15, extreme: 34 },
+    { normal: 10, good: 15, extreme: 34 },
+    { normal: 9, good: 14, extreme: 34 },
+    { normal: 9, good: 14, extreme: 32 },
+    { normal: 8, good: 13, extreme: 32 },
+    { normal: 8, good: 13, extreme: 32 },
+    { normal: 7, good: 12, extreme: 30 },
+    { normal: 7, good: 12, extreme: 30 },
+    { normal: 6, good: 11, extreme: 30 },
+    { normal: 6, good: 11, extreme: 28 },
+    { normal: 5, good: 10, extreme: 28 },
+    { normal: 5, good: 10, extreme: 26 },
   ]
 
   const type = table[ability - 1]
@@ -430,17 +430,14 @@ function calcDice(ability, dice) {
   if (type.extreme) {
     if (dice >= type.extreme) return 'Falha Crítica'
     if (dice >= type.good) return 'Falha Normal'
-    if (dice >= type.normal) return 'Sucesso Normal'
-    if (dice <= type.normal) return 'Sucesso Crítico'
+    return 'Sucesso Normal'
   } else if (type.good) {
     if (dice >= type.good) return 'Falha'
-    if (dice >= type.normal) return 'Sucesso Normal'
-    if (dice <= type.normal) return 'Sucesso Crítico'
-  } else if (type.normal) {
-    if (dice >= type.normal) return 'Sucesso Normal'
-    if (dice <= type.normal) return 'Sucesso Crítico'
-  }
+    return 'Sucesso Normal'
+  } 
+  return 'Sucesso Crítico'
 }
+
 function rollDice(dice) {
   let [count, max] = dice.split('d')
 
