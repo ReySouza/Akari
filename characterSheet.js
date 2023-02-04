@@ -133,18 +133,29 @@ const lifeModal = $('#lifeModal')
 const sanityModal = $('#sanityModal')
 const staminaModal = $('#staminaModal')
 const manaModal = $('#manaModal')
-const circles = document.querySelectorAll(".surrounding-circle");
-const center = document.querySelector("#center-circle");
-const radius = center.offsetWidth / 2 + 50;
 
-for (let i = 0; i < circles.length; i++) {
-  const angle = (360 / circles.length) * i;
-  const x = radius * Math.cos(angle * (Math.PI / 180)) + center.offsetLeft + center.offsetWidth / 2;
-  const y = radius * Math.sin(angle * (Math.PI / 180)) + center.offsetTop + center.offsetHeight / 2;
+      function draw() {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
 
-  circles[i].style.left = `${x}px`;
-  circles[i].style.top = `${y}px`;
-}
+        var x = 150;
+        var y = 150;
+        var radius = 30;
+
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+        ctx.stroke();
+
+        for (var i = 0; i < 6; i++) {
+          ctx.beginPath();
+          ctx.arc(x + (i + 1) * 70, y, radius * 2, 0, 2 * Math.PI);
+          ctx.fillStyle = "red";
+          ctx.fill();
+          ctx.stroke();
+        }
+      }
 
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
