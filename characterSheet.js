@@ -1,84 +1,87 @@
 const data = {
-  name: 'Claudio',
-  player: 'Ryan',
-  occupation: 'Caçador',
-  age: 21,
-  sex: 'male',
-  birthplace: 'São paulo',
-  residence: 'São paulo',
+  name: 'Akari Suwa',
+  player: 'Pedro',
+  occupation: 'Miko',
+  age: 25,
+  sex: 'female',
+  birthplace: 'Suwa',
 
   life: {
-    current: 12,
+    current: 28,
     max: 12,
   },
   sanity: {
-    current: 62,
-    max: 62,
+    current: 24,
+    max: 15,
+  },
+  stamina: {
+    current: 4,
+    max: 11,
   },
 
   weapons: [
     {
-      name: 'Balestra',
-      type: 'Arco',
-      damage: '1d20',
-      numCurrent: 1,
-      numMax: 1,
-      attack: 5,
-      reach: '10 m',
-      defect: 1,
-      area: '',
+      name: 'Gohei',
+      type: 'Outro',
+      damage: '1d6',
+      attack: 'Dex-1',
     },
     {
-      name: 'Canivete',
-      type: 'Briga',
-      damage: '1d10',
-      numCurrent: '',
-      numMax: '',
-      attack: '1/2',
-      reach: '',
-      defect: 1,
-      area: '',
+      name: 'Ofuda',
+      type: 'Ofuda',
+      damage: '2d6-1',
+      attack: 'Dex',
+    },
+     {
+      name: 'Sai',
+      type: 'Sai',
+      damage: '2d6+3',
+      attack: 'Dex-3',
     },
   ],
   attributes: [
-    {
-      type: 'Aparência',
-      amount: 10,
-    },
-    {
-      type: 'Constituição',
-      amount: 10,
-    },
-    {
-      type: 'Destreza',
-      amount: 10,
-    },
-    {
-      type: 'Educação',
-      amount: 10,
-    },
     {
       type: 'Força',
       amount: 10,
     },
     {
+      type: 'Dextreza',
+      amount: 11,
+    },
+    {
       type: 'Inteligência',
+      amount: 12,
+    },
+    {
+      type: 'Saúde',
+      amount: 11,
+    },
+    {
+      type: 'Vontade',
+      amount: 12,
+    },
+    {
+      type: 'Percepção',
+      amount: 12,
+    },
+    {
+      type: 'Carisma',
       amount: 10,
     },
     {
-      type: 'Poder',
-      amount: 10,
+      type: 'Intimidação',
+      amount: 12,
     },
     {
-      type: 'Sorte',
-      amount: 10,
+      type: 'Parry',
+      amount: 11,
     },
     {
-      type: 'Movimento',
-      amount: 10,
+      type: 'Bloqueio',
+      amount: 13,
     },
     {
-      type: '?',
+      type: 'Esquiva',
       amount: 10,
     },
   ],
@@ -105,13 +108,15 @@ $('#lifeCount').text(`${data.life.current}/${data.life.max}`)
 $('#lifeCurrent').val(data.life.current)
 $('#lifeMax').val(data.life.max)
 
-$('.sanityBar').css(
-  'width',
-  `${calculateBar(data.sanity.current, data.sanity.max)}%`
-)
+$('.sanityBar').css('width', `${calculateBar(data.sanity.current, data.sanity.max)}%`)
 $('#sanityCount').text(`${data.sanity.current}/${data.sanity.max}`)
 $('#sanityCurrent').val(data.sanity.current)
 $('#sanityMax').val(data.sanity.max)
+
+$('.staminaBar').css('width', `${calculateBar(data.stamina.current, data.stamina.max)}%`)
+$('#staminaCount').text(`${data.stamina.current}/${data.stamina.max}`)
+$('#staminaCurrent').val(data.stamina.current)
+$('#staminaMax').val(data.stamina.max)
 
 const diceModal = $('#diceAttributes')
 const lifeModal = $('#lifeModal')
@@ -145,7 +150,7 @@ function rollAtribute(atribute, amount) {
   }, 1000)
 
   setTimeout(() => {
-    const diceNumber = rollDice('1d20')
+    const diceNumber = rollDice('3d6')
     const diceType = calcDice(amount, diceNumber)
     $('#diceNumber').text(diceNumber)
     $('#diceType').text(diceType)
@@ -171,6 +176,11 @@ $('.sanityBar').click(function () {
   sanityModal.css('display', 'block')
 })
 
+$('.staminaBar').click(function () {
+  console.log(this)
+  staminaModal.css('display', 'block')
+})
+
 $('#addWeapon').click(function () {
   openModal('#addWeaponModal')
 })
@@ -183,11 +193,11 @@ $('#lesion').change(function () {
   }
 })
 
-$('#injury').change(function () {
+$('#possession').change(function () {
   if (this.checked) {
-    console.log('Modo lesionamento ativado!')
+    console.log('Modo possessão ativado!')
   } else {
-    console.log('Modo lesionado desativado!')
+    console.log('Modo possessão desativado!')
   }
 })
 
@@ -279,6 +289,24 @@ $('#changeSanity').submit(function (event) {
   $('#sanityCount').text(`${current}/${max}`)
 
   closeModal('#sanityModal')
+  event.preventDefault()
+})
+
+  $('#changeStamina').submit(function (event) {
+  let current = Number($('#staminaCurrent').val())
+  const max = Number($('#staminaMax').val())
+
+  if (current > max) {
+    alert('A stamina atual não pode ser maior que a maxima!')
+    current = max
+  }
+
+  data.stamina.current = current
+  data.stamina.max = max
+  $('.staminaBar').css('width', `${calculateBar(current, max)}%`)
+  $('#staminaCount').text(`${current}/${max}`)
+
+  closeModal('#staminaModal')
   event.preventDefault()
 })
 
