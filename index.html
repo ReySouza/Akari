@@ -151,6 +151,34 @@
       </div>
     </div>
 
+ <div id="addVantageModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>ADICIONAR VANTAGEM</h2>
+        <hr />
+        <form id="addVantageForm" action="">
+          <table class="vantages" id="newVantage">
+            <tr>
+              <th>Nome</th>
+              <th>Gasto</th>
+              <th>Descrição</th>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="vantageName" id="vantageName" />
+              </td>
+              <td>
+                <input type="text" name="vantageCost" id="vantageCost" />
+              </td>
+              <td>
+                <input type="text" name="vantageDescription" id="vantageDescription" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
  <div id="addSpellModal" class="modal with-input">
       <div class="modal-content">
         <h2>ADICIONAR MAGIA</h2>
@@ -300,8 +328,20 @@
 
         <div class="attributesList" id="attributesList"></div>
       </div>
-      <div class="advantages border">
+      <div class="vantages border">
         <h2 class="grid-title">Vantagens</h2>
+        <button id="addvantage">&plus;</button>
+        </div>
+        <hr />
+
+        <table class="vantages" id="vantages">
+          <tr>
+            <th>Nome</th>
+            <th>Gasto</th>
+            <th>Descrição</th>
+          </tr>
+        </table>
+      </div>
         <hr />
       </div>
       <div class="combat border">
