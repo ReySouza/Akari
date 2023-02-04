@@ -18,6 +18,10 @@ const data = {
     current: 4,
     max: 11,
   },
+   mana: {
+    current: 24,
+    max: 24,
+  },
 
   weapons: [
     {
