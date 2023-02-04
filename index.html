@@ -11,10 +11,10 @@
 
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Lenda da Guerreira que Celebra a Maidono</title>
+    <title>Uma Alma Bipolar</title>
   </head>
   <body>
-    <h1 class="title">Vítima de Hourai</h1>
+    <h1 class="title">A Guerreira que Celebra a Maidono</h1>
 
     <!-- modal -->
     <div id="diceAttributes" class="modal">
@@ -72,6 +72,25 @@
           />
           <h3>Máximo</h3>
           <input type="number" name="staminaMax" id="staminaMax" min="0" />
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
+    <div id="manaModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>MODIFICAR ESOTERICA</h2>
+        <hr />
+        <form class="formModal" id="changeMana">
+          <h3>Atual</h3>
+          <input
+            type="number"
+            name="manaCurrent"
+            id="manaCurrent"
+            min="0"
+          />
+          <h3>Máximo</h3>
+          <input type="number" name="manaMax" id="manaMax" min="0" />
           <input type="submit" value="Salvar" />
         </form>
       </div>
@@ -158,8 +177,8 @@
       </div>
       <div class="character">
         <div class="characterHeader">
-          <img class="characterPhoto" src="./img/character.png" alt="Foto" />
-          <img class="dice" src="./img/dado.png" alt="Dado" />
+          <img class="characterPhoto" src="./img/akari.png" alt="Foto" />
+          <img class="symbol" src="./img/symbol.png" alt="Símbolo" />
         </div>
 
         <div class="bars">
@@ -207,6 +226,15 @@
             <div class="contentStaminaBar">
               <div class="staminaBar" style="width: 0%">
                 <p class="barcount" id="staminaCount"></p>
+              </div>
+            </div>
+          </div>
+
+        <h4>Esoterica</h4>
+          <div class="mana">
+            <div class="contentmanaBar">
+              <div class="manaBar" style="width: 0%">
+                <p class="barcount" id="manaCount"></p>
               </div>
             </div>
           </div>
