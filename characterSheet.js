@@ -17,9 +17,7 @@
     localStorage.setItem("sex", sex);
     localStorage.setItem("birthplace", birthplace);
   });
-</script>
 
-<script>
   // retrieve data from local storage
   const name = localStorage.getItem("name");
   const player = localStorage.getItem("player");
