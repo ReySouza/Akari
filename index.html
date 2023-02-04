@@ -11,10 +11,10 @@
 
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Ficha do personagem</title>
+    <title>Lenda da Guerreira que Celebra a Maidono</title>
   </head>
   <body>
-    <h1 class="title">Perfil de investigador</h1>
+    <h1 class="title">Vítima de Hourai</h1>
 
     <!-- modal -->
     <div id="diceAttributes" class="modal">
@@ -58,6 +58,26 @@
       </div>
     </div>
 
+     <div id="staminaModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>MODIFICAR STAMINA</h2>
+        <hr />
+        <form class="formModal" id="changeStamina">
+          <h3>Atual</h3>
+          <input
+            type="number"
+            name="staminaCurrent"
+            id="staminaCurrent"
+            min="0"
+          />
+          <h3>Máximo</h3>
+          <input type="number" name="staminaMax" id="staminaMax" min="0" />
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+      
+
     <div id="addWeaponModal" class="modal with-input">
       <div class="modal-content">
         <h2>ADICIONAR ARMA</h2>
@@ -68,12 +88,7 @@
               <th>Nome</th>
               <th>Tipo</th>
               <th>Dano</th>
-              <th>Num. Atual</th>
-              <th>Num. Máximo</th>
               <th>Ataque</th>
-              <th>Alcance</th>
-              <th>Defeito</th>
-              <th>Área</th>
             </tr>
             <tr>
               <td>
@@ -81,35 +96,34 @@
               </td>
               <td>
                 <select id="weaponType" name="weaponType">
-                  <option value="fire">Fogo</option>
-                  <option value="arch">Arco</option>
-                  <option value="fight">Briga</option>
+                  <option value="axe">Machado</option>
+                  <option value="mace">Maça</option>
+                  <option value="tanegashima">Tanegashima</option>
+                  <option value="blowgun">Zarabatana</option>
+                  <option value="bow">Arco e Flecha</option>
+                  <option value="garrote">Garrote</option>
+                  <option value="katana">Katana</option>
+                  <option value="knife">Faca</option>
+                  <option value="kusari">Kusari</option>
+                  <option value="lasso">Laço</option>
+                  <option value="wakizashi">Wakizashi</option>
+                  <option value="shuriken">Shuriken</option>
+                  <option value="batton">Bastão</option>
+                  <option value="sai">Sai</option>
+                  <option value="kunai">Kunai</option>
+                  <option value="naginata">Naginata</option>
+                  <option value="vajra">Vajra</option>
+                  <option value="ofuda">Ofuda</option>
+                  <option value="hammer">Otsuchi</option>
+                  <option value="tessen">Leque</option>
+                  <option value="other">Outro</option>
                 </select>
               </td>
               <td>
-                <input type="text" name="weaponDamage" id="weaponDamege" />
-              </td>
-              <td>
-                <input
-                  type="text"
-                  name="weaponNumCurrent"
-                  id="weaponNumCurrent"
-                />
-              </td>
-              <td>
-                <input type="text" name="weaponNumMax" id="weaponNumMax" />
+                <input type="text" name="weaponDamage" id="weaponDamage" />
               </td>
               <td>
                 <input type="text" name="weaponAttack" id="weaponAttack" />
-              </td>
-              <td>
-                <input type="text" name="weaponReach" id="weaponReach" />
-              </td>
-              <td>
-                <input type="text" name="weaponDefect" id="weaponDefect" />
-              </td>
-              <td>
-                <input type="text" name="weaponArea" id="weaponArea" />
               </td>
             </tr>
           </table>
@@ -140,8 +154,6 @@
           </select>
           <h4>Local de nascimento</h4>
           <input type="text" name="birthplace" id="birthplace" value="" />
-          <h4>Local de residência</h4>
-          <input type="text" name="residence" id="residence" value="" />
         </div>
       </div>
       <div class="character">
@@ -161,8 +173,8 @@
             <form action="">
               <input type="checkbox" id="lesion" name="lesion" value="lesion" />
               <label for="lesion"> Lesão grave</label>
-              <input type="checkbox" id="injury" name="injury" value="injury" />
-              <label for="injury"> Lesionamento</label>
+              <input type="checkbox" id="possessed" name="possession" value="possession" />
+              <label for="injury"> Possessão</label>
               <input type="checkbox" id="dying" name="dying" value="dying" />
               <label for="dying"> Morrendo</label>
             </form>
@@ -190,18 +202,23 @@
           </div>
         </div>
 
-        <div class="extra">
-          <div class="damage">
-            <p>Dano extra</p>
-            <input type="text" name="damage" id="damage" />
+          <h4>Stamina</h4>
+          <div class="stamina">
+            <div class="contentStaminaBar">
+              <div class="staminaBar" style="width: 0%">
+                <p class="barcount" id="staminaCount"></p>
+              </div>
+            </div>
           </div>
-          <div class="body">
-            <p>Corpo</p>
-            <input type="text" name="damage" id="damage" />
+
+        <div class="points">
+          <div class="points">
+            <p>Pontos de Personagem</p>
+            <input type="number" name="points" id="points" />
           </div>
-          <div class="exposure">
-            <p>Exposição paranormal</p>
-            <input type="text" name="damage" id="damage" />
+          <div class="energy">
+            <p>Reserva de Energia</p>
+            <input type="number" name="energy" id="energy" />
           </div>
         </div>
       </div>
@@ -211,8 +228,8 @@
 
         <div class="attributesList" id="attributesList"></div>
       </div>
-      <div class="expertise border">
-        <h2 class="grid-title">PERICIA</h2>
+      <div class="advantages border">
+        <h2 class="grid-title">Vantagens</h2>
         <hr />
       </div>
       <div class="combat border">
@@ -227,18 +244,13 @@
             <th>Nome</th>
             <th>Tipo</th>
             <th>Dano</th>
-            <th>Nun. Atual</th>
-            <th>Num. Máximo</th>
             <th>Ataque</th>
-            <th>Alcance</th>
-            <th>Defeito</th>
-            <th>Área</th>
           </tr>
         </table>
       </div>
 
-      <div class="expertise2 border">
-        <h2 class="grid-title">PERICIA</h2>
+      <div class="skills border">
+        <h2 class="grid-title">Habilidades</h2>
         <hr />
       </div>
     </div>
