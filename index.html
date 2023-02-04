@@ -227,6 +227,30 @@
       <div class="details border">
         <h2 class="grid-title">DETALHES PESSOAIS</h2>
         <hr />
+     <div class="inputs">
+          <h4>Nome</h4>
+          <input type="text" name="name" id="name" value="" />
+          <h4>Jogador</h4>
+          <input type="text" name="player" id="player" value="" />
+          <h4>Ocupação</h4>
+          <input type="text" name="occupation" id="occupation" value="" />
+          <h4>Idade</h4>
+          <input type="text" name="age" id="age" value="" />
+          <h4>Sexo</h4>
+          <select id="sex" name="sex">
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+            <option value="other">Outros</option>
+          </select>
+          <h4>Local de nascimento</h4>
+          <input type="text" name="birthplace" id="birthplace" value="" />
+        </div>
+      </div>
+      <div class="character">
+        <div class="characterHeader">
+          <img class="characterPhoto" src="./img/akari.png" alt="Foto" />
+          <img class="symbol" src="./img/symbol.png" alt="Símbolo" />
+        </div>
 
 <script>
   document.querySelector("form").addEventListener("submit", function(event) {
