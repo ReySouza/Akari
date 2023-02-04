@@ -1,4 +1,3 @@
-<script>
 document.querySelector("form").addEventListener("submit", function(event) {
   event.preventDefault();
 
@@ -34,7 +33,6 @@ document.getElementById("occupation").value = occupation;
 document.getElementById("age").value = age;
 document.getElementById("sex").value = sex;
 document.getElementById("birthplace").value = birthplace;
-</script>
 
 const data = {
   points: 0,
