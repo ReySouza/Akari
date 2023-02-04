@@ -117,10 +117,16 @@ $('#staminaCount').text(`${data.stamina.current}/${data.stamina.max}`)
 $('#staminaCurrent').val(data.stamina.current)
 $('#staminaMax').val(data.stamina.max)
 
+$('.manaBar').css('width', `${calculateBar(data.mana.current, data.mana.max)}%`)
+$('#manaCount').text(`${data.mana.current}/${data.mana.max}`)
+$('#manaCurrent').val(data.mana.current)
+$('#manaMax').val(data.mana.max)
+
 const diceModal = $('#diceAttributes')
 const lifeModal = $('#lifeModal')
 const sanityModal = $('#sanityModal')
 const staminaModal = $('#staminaModal')
+const manaModal = $('#manaModal')
 
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
@@ -179,6 +185,11 @@ $('.sanityBar').click(function () {
 $('.staminaBar').click(function () {
   console.log(this)
   staminaModal.css('display', 'block')
+})
+
+$('.manaBar').click(function () {
+  console.log(this)
+  manaModal.css('display', 'block')
 })
 
 $('#addWeapon').click(function () {
@@ -302,6 +313,24 @@ $('#changeSanity').submit(function (event) {
   $('#staminaCount').text(`${current}/${max}`)
 
   closeModal('#staminaModal')
+  event.preventDefault()
+})
+
+$('#changeMana').submit(function (event) {
+  let current = Number($('#manaCurrent').val())
+  const max = Number($('#manaMax').val())
+
+  if (current > max) {
+    alert('A mana atual não pode ser maior que a maxima!')
+    current = max
+  }
+
+  data.mana.current = current
+  data.mana.max = max
+  $('.manaBar').css('width', `${calculateBar(current, max)}%`)
+  $('#manaCount').text(`${current}/${max}`)
+
+  closeModal('#manaModal')
   event.preventDefault()
 })
 
