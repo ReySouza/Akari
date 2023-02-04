@@ -134,29 +134,6 @@ const sanityModal = $('#sanityModal')
 const staminaModal = $('#staminaModal')
 const manaModal = $('#manaModal')
 
-      function draw() {
-        var canvas = document.getElementById("myCanvas");
-        var ctx = canvas.getContext("2d");
-
-        var x = 150;
-        var y = 150;
-        var radius = 30;
-
-        ctx.beginPath();
-        ctx.arc(x, y, radius, 0, 2 * Math.PI);
-        ctx.fillStyle = "blue";
-        ctx.fill();
-        ctx.stroke();
-
-        for (var i = 0; i < 6; i++) {
-          ctx.beginPath();
-          ctx.arc(x + (i + 1) * 70, y, radius * 2, 0, 2 * Math.PI);
-          ctx.fillStyle = "red";
-          ctx.fill();
-          ctx.stroke();
-        }
-      }
-
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
     diceModal.css('display', 'none')
