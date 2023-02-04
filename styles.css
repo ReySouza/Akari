@@ -460,6 +460,51 @@ select:focus {
     align-self: center;
 }
 
+table.vantages {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-end: auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table.vantages tr:first-child {
+    border-bottom: 2px solid #a2a2a2;
+}
+
+table.vantages tr {
+    border-bottom: 0.1px solid #a2a2a2;
+}
+
+table.vantages th {
+    text-align: center;
+    height: 25px;
+    width: 10%;
+}
+
+table.vantages td {
+    text-align: center;
+    height: 35px;
+}
+
+table.vantages td input {
+    text-align: center;
+    width: 65%;
+    border-bottom: 0.1px solid #a2a2a2;
+}
+
+table.vantages td select {
+    font-size: 16px;
+}
+
+
+table.vantages td button {
+    color: #fff;
+    background: #0a0b0c;
+}
+
 /* The Modal (background) */
 
 .modal {
