@@ -9,12 +9,12 @@ const data = {
   energy: 12,
 
   life: {
-    current: 28,
-    max: 12,
+    current: 12,
+    max: 28,
   },
   sanity: {
-    current: 24,
-    max: 15,
+    current: 15,
+    max: 24,
   },
   stamina: {
     current: 4,
