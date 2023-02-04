@@ -102,17 +102,81 @@ h2.grid-title {
     grid-area: attributes;
 }
 
-.expertise { 
-    grid-area: expertise;
+.advantages { 
+    grid-area: advantages;
     height: 400px;
 }
 
-.expertise2 { 
-    grid-area: expertise2;
+.skills { 
+    grid-area: skills;
     height: 400px;
 }
 
+.skills .grid-title {
+    flex: 1;
+}
 
+.skills .skillHeader {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.skills .skillHeader button {
+    align-self: center;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: 22px;
+    background: #0a0b0c;
+    border: 0.1px solid #a2a2a2;
+    margin-right: 50px;
+}
+
+table.spells {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-end: auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table.spells tr:first-child {
+    border-bottom: 2px solid #a2a2a2;
+}
+
+table.spells tr {
+    border-bottom: 0.1px solid #a2a2a2;
+}
+
+table.spells th {
+    text-align: center;
+    height: 25px;
+    width: 10%;
+}
+
+table.spells td {
+    text-align: center;
+    height: 35px;
+}
+
+table.spells td input {
+    text-align: center;
+    width: 65%;
+    border-bottom: 0.1px solid #a2a2a2;
+}
+
+table.spells td select {
+    font-size: 16px;
+}
+
+
+table.spells td button {
+    color: #fff;
+    background: #0a0b0c;
+}
 .combat {
     grid-area: combat;
     height: 400px;
@@ -301,6 +365,16 @@ select:focus {
     width: 50%;
     height: 25px;
     background-color: #01f616;
+    transition: width 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.manaBar {
+    width: 50%;
+    height: 25px;
+    background-color: #b212ad;
     transition: width 2s;
     display: flex;
     align-items: center;
