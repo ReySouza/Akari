@@ -133,6 +133,18 @@ const lifeModal = $('#lifeModal')
 const sanityModal = $('#sanityModal')
 const staminaModal = $('#staminaModal')
 const manaModal = $('#manaModal')
+const circles = document.querySelectorAll(".surrounding-circle");
+const center = document.querySelector("#center-circle");
+const radius = center.offsetWidth / 2 + 50;
+
+for (let i = 0; i < circles.length; i++) {
+  const angle = (360 / circles.length) * i;
+  const x = radius * Math.cos(angle * (Math.PI / 180)) + center.offsetLeft + center.offsetWidth / 2;
+  const y = radius * Math.sin(angle * (Math.PI / 180)) + center.offsetTop + center.offsetHeight / 2;
+
+  circles[i].style.left = `${x}px`;
+  circles[i].style.top = `${y}px`;
+}
 
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
