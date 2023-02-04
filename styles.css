@@ -133,50 +133,6 @@ h2.grid-title {
     margin-right: 50px;
 }
 
-table.spells {
-    display: block;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-block-end: auto;
-    border-collapse: collapse;
-    width: 90%;
-}
-
-table.spells tr:first-child {
-    border-bottom: 2px solid #a2a2a2;
-}
-
-table.spells tr {
-    border-bottom: 0.1px solid #a2a2a2;
-}
-
-table.spells th {
-    text-align: center;
-    height: 25px;
-    width: 10%;
-}
-
-table.spells td {
-    text-align: center;
-    height: 35px;
-}
-
-table.spells td input {
-    text-align: center;
-    width: 65%;
-    border-bottom: 0.1px solid #a2a2a2;
-}
-
-table.spells td select {
-    font-size: 16px;
-}
-
-
-table.spells td button {
-    color: #fff;
-    background: #0a0b0c;
-}
 .combat {
     grid-area: combat;
     height: 400px;
@@ -458,51 +414,6 @@ select:focus {
     text-align: center;
     font-size: 18px;
     align-self: center;
-}
-
-table.vantages {
-    display: block;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-block-end: auto;
-    border-collapse: collapse;
-    width: 90%;
-}
-
-table.vantages tr:first-child {
-    border-bottom: 2px solid #a2a2a2;
-}
-
-table.vantages tr {
-    border-bottom: 0.1px solid #a2a2a2;
-}
-
-table.vantages th {
-    text-align: center;
-    height: 25px;
-    width: 10%;
-}
-
-table.vantages td {
-    text-align: center;
-    height: 35px;
-}
-
-table.vantages td input {
-    text-align: center;
-    width: 65%;
-    border-bottom: 0.1px solid #a2a2a2;
-}
-
-table.vantages td select {
-    font-size: 16px;
-}
-
-
-table.vantages td button {
-    color: #fff;
-    background: #0a0b0c;
 }
 
 /* The Modal (background) */
