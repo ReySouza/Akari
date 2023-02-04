@@ -135,16 +135,16 @@ h2.grid-title {
 
 #circle-container {
   position: relative;
-  width: 1500px;
-  height: 1500px;
+  width: 200px;
+  height: 2000px;
   margin: 50px auto;
 }
 
 #center-circle {
   position: absolute;
   top: 0;
-  left: 15%;
-  transform: translate(-15%, 0);
+  left: 90%;
+  transform: translate(-90%, 0);
   width: 100px;
   height: 100px;
   background-color: blue;
