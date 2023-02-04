@@ -73,8 +73,7 @@ h2.grid-title {
 
 .details { 
     grid-area: details;
-    border: 1px solid black;
-    border-width: 0.5px;
+    height: auto;
 }
 .character { 
     grid-area: character;
