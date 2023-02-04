@@ -134,15 +134,6 @@ const sanityModal = $('#sanityModal')
 const staminaModal = $('#staminaModal')
 const manaModal = $('#manaModal')
 
-const skills = document.querySelectorAll('.skill');
-
-for (const skill of skills) {
-  skill.addEventListener('click', function() {
-    this.classList.toggle('active');
-  });
-}
-
-
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
     diceModal.css('display', 'none')
