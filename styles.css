@@ -135,9 +135,9 @@ h2.grid-title {
 
 #circle-container {
   position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 20px auto;
+  width: 25px;
+  height: 25px;
+  margin: 5px auto;
 }
 
 #center-circle {
