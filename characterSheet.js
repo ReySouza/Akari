@@ -136,23 +136,12 @@ const manaModal = $('#manaModal')
 
 const skills = document.querySelectorAll('.skill');
 
-skills.forEach(skill => {
+for (const skill of skills) {
   skill.addEventListener('click', function() {
-    const skillId = this.id;
-    if (canUpgradeSkill(skillId)) {
-      upgradeSkill(skillId);
-    }
+    this.classList.toggle('active');
   });
-});
-
-function canUpgradeSkill(skillId) {
-  // logic to determine if skill can be upgraded
-  return true;
 }
 
-function upgradeSkill(skillId) {
-  // logic to upgrade skill
-}
 
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
