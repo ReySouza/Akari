@@ -297,6 +297,16 @@ select:focus {
     justify-content: center;
     text-align: center;
 }
+.staminaBar {
+    width: 50%;
+    height: 25px;
+    background-color: #01f616;
+    transition: width 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 /* FIM BARS */
 
