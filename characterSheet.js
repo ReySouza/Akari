@@ -114,6 +114,10 @@ data.weapons.map((weapon, index) => {
   addWeaponToTable(weapon, index)
 })
 
+data.vantages.map((vantage, index) => {
+  addVantageToTable(vantage, index)
+})
+
 data.attributes.map((attribute, index) => {
   addAttribute(attribute, index)
 })
@@ -302,14 +306,14 @@ $('#addVantageForm').submit(function (event) {
 
   const vantage = {
     name: $('#vantageName').val(),
-    type: weaponType,
+    type: vantageName,
     damage: $('#vantageCost').val(),
     attack: $('#vantageDescription').val(),
   }
 
-  data.vantage.push(weapon)
+  data.vantage.push(vantage)
   const id = data.vantage.length - 1
-  addVantageToTable(weapon, id)
+  addVantageToTable(vantage, id)
 
   closeModal('#addVantageModal')
   event.preventDefault()
