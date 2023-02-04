@@ -142,9 +142,9 @@ h2.grid-title {
 
 #center-circle {
   position: absolute;
-  top: 40%;
-  left: 60%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 90%;
+  transform: translate(-20%, -90%);
   width: 100px;
   height: 100px;
   background-color: blue;
