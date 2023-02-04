@@ -134,6 +134,65 @@ const sanityModal = $('#sanityModal')
 const staminaModal = $('#staminaModal')
 const manaModal = $('#manaModal')
 
+const container = document.querySelector("#container");
+const centerCircle = document.querySelector("#center-circle");
+const surroundingCirclesContainer = document.querySelector("#surrounding-circles");
+
+centerCircle.style.width = "100px";
+centerCircle.style.height = "100px";
+centerCircle.style.borderRadius = "50%";
+centerCircle.style.backgroundColor = "lightblue";
+centerCircle.style.position = "absolute";
+centerCircle.style.top = "200px";
+centerCircle.style.left = "200px";
+
+container.style.position = "relative";
+container.style.width = "500px";
+container.style.height = "500px";
+container.style.margin = "50px auto";
+
+surroundingCirclesContainer.style.position = "absolute";
+surroundingCirclesContainer.style.top = "150px";
+surroundingCirclesContainer.style.left = "150px";
+
+for (let i = 0; i < 6; i++) {
+  const surroundingCircle = document.createElement("div");
+  surroundingCircle.style.width = "200px";
+  surroundingCircle.style.height = "200px";
+  surroundingCircle.style.borderRadius = "50%";
+  surroundingCircle.style.backgroundColor = "lightgreen";
+  surroundingCircle.style.position = "absolute";
+
+  switch (i) {
+    case 0:
+      surroundingCircle.style.top = "-25px";
+      surroundingCircle.style.left = "-25px";
+      break;
+    case 1:
+      surroundingCircle.style.top = "-25px";
+      surroundingCircle.style.left = "175px";
+      break;
+    case 2:
+      surroundingCircle.style.top = "175px";
+      surroundingCircle.style.left = "-25px";
+      break;
+    case 3:
+      surroundingCircle.style.top = "175px";
+      surroundingCircle.style.left = "175px";
+      break;
+    case 4:
+      surroundingCircle.style.top = "-25px";
+      surroundingCircle.style.left = "375px";
+      break;
+    case 5:
+      surroundingCircle.style.top = "175px";
+      surroundingCircle.style.left = "375px";
+      break;
+  }
+
+  surroundingCirclesContainer.appendChild(surroundingCircle);
+}
+
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
     diceModal.css('display', 'none')
