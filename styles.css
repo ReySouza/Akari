@@ -73,7 +73,6 @@ h2.grid-title {
 
 .details { 
     grid-area: details;
-    height: auto;
     border: 1px solid black;
     border-width: 0.5px;
 }
