@@ -1,10 +1,42 @@
+  document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // get form data
+    const name = document.getElementById("name").value;
+    const player = document.getElementById("player").value;
+    const occupation = document.getElementById("occupation").value;
+    const age = document.getElementById("age").value;
+    const sex = document.getElementById("sex").value;
+    const birthplace = document.getElementById("birthplace").value;
+
+    // store form data in local storage
+    localStorage.setItem("name", name);
+    localStorage.setItem("player", player);
+    localStorage.setItem("occupation", occupation);
+    localStorage.setItem("age", age);
+    localStorage.setItem("sex", sex);
+    localStorage.setItem("birthplace", birthplace);
+  });
+</script>
+
+<script>
+  // retrieve data from local storage
+  const name = localStorage.getItem("name");
+  const player = localStorage.getItem("player");
+  const occupation = localStorage.getItem("occupation");
+  const age = localStorage.getItem("age");
+  const sex = localStorage.getItem("sex");
+  const birthplace = localStorage.getItem("birthplace");
+
+  // set form values
+  document.getElementById("name").value = name;
+  document.getElementById("player").value = player;
+  document.getElementById("occupation").value = occupation;
+  document.getElementById("age").value = age;
+  document.getElementById("sex").value = sex;
+  document.getElementById("birthplace").value = birthplace;
+
 const data = {
-  name: 'Akari Suwa',
-  player: 'Pedro',
-  occupation: 'Miko',
-  age: 25,
-  sex: 'female',
-  birthplace: 'Suwa',
   points: 0,
   energy: 12,
 
