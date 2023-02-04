@@ -133,31 +133,28 @@ h2.grid-title {
     margin-right: 50px;
 }
 
-#circle-container {
+.circle-container {
   position: relative;
-  width: 100px;
-  height: 2000px;
-  margin: 500px left;
+  width: 500px;
+  height: 500px;
 }
 
-#center-circle {
+.center-circle {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(0, 0);
   width: 100px;
   height: 100px;
-  background-color: blue;
   border-radius: 50%;
+  background-color: blue;
+  top: 200px;
+  left: 200px;
 }
 
 .surrounding-circle {
   position: absolute;
-  top: 0;
   width: 50px;
   height: 50px;
-  background-color: red;
   border-radius: 50%;
+  background-color: green;
 }
 
 .combat {
