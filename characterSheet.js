@@ -101,7 +101,6 @@ $('#occupation').val(data.occupation)
 $('#age').val(data.age)
 $('#sex').val(data.sex)
 $('#birthplace').val(data.birthplace)
-$('#residence').val(data.residence)
 
 $('.lifeBar').css('width', `${calculateBar(data.life.current, data.life.max)}%`)
 $('#lifeCount').text(`${data.life.current}/${data.life.max}`)
@@ -121,6 +120,7 @@ $('#staminaMax').val(data.stamina.max)
 const diceModal = $('#diceAttributes')
 const lifeModal = $('#lifeModal')
 const sanityModal = $('#sanityModal')
+const staminaModal = $('#staminaModal')
 
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
@@ -240,12 +240,7 @@ $('#addWeaponForm').submit(function (event) {
     name: $('#weaponName').val(),
     type: weaponType,
     damage: $('#weapondamage').val(),
-    numCurrent: $('#weaponNumCurrent').val(),
-    numMax: $('#weaponNumMax').val(),
     attack: $('#weaponAttack').val(),
-    reach: $('#weaponReach').val(),
-    defect: $('#weaponDefect').val(),
-    area: $('#weaponArea').val(),
   }
 
   data.weapons.push(weapon)
@@ -324,48 +319,45 @@ function calculateBar(current, max) {
 }
 
 function calcDice(ability, dice) {
-  // Não encontrei uma forma mais fácil, então fiz assim
 
   const table = [
-    { normal: 20 },
-    { normal: 19, good: 20 },
-    { normal: 18, good: 20 },
-    { normal: 17, good: 19 },
-    { normal: 16, good: 19, extreme: 20 },
-    { normal: 15, good: 18, extreme: 20 },
-    { normal: 14, good: 18, extreme: 20 },
-    { normal: 13, good: 17, extreme: 20 },
-    { normal: 12, good: 17, extreme: 20 },
-    { normal: 11, good: 16, extreme: 20 },
-    { normal: 10, good: 16, extreme: 19 },
-    { normal: 9, good: 16, extreme: 19 },
-    { normal: 8, good: 15, extreme: 19 },
-    { normal: 7, good: 14, extreme: 19 },
-    { normal: 6, good: 14, extreme: 18 },
-    { normal: 5, good: 13, extreme: 18 },
-    { normal: 4, good: 13, extreme: 18 },
-    { normal: 3, good: 12, extreme: 18 },
-    { normal: 2, good: 12, extreme: 18 },
-    { normal: 1, good: 11, extreme: 17 },
+    { normal: 9 },
+    { normal: 8, good: 9 },
+    { normal: 7, good: 9 },
+    { normal: 6, good: 8 },
+    { normal: 5, good: 8, extreme: 9 },
+    { normal: 4, good: 7, extreme: 9 },
+    { normal: 3, good: 7, extreme: 18 },
+    { normal: 2, good: 6, extreme: 17 },
+    { normal: 1, good: 6, extreme: 17 },
+    { normal: 0, good: 5, extreme: 17 },
+    { normal: 0, good: 5, extreme: 16 },
+    { normal: 0, good: 4, extreme: 16 },
+    { normal: 0, good: 4, extreme: 16 },
+    { normal: 0, good: 3, extreme: 15 },
+    { normal: 0, good: 3, extreme: 15 },
+    { normal: 0, good: 2, extreme: 15 },
+    { normal: 0, good: 2, extreme: 14 },
+    { normal: 0, good: 1, extreme: 14 },
+    { normal: 0, good: 1, extreme: 13 },
   ]
 
   const type = table[ability - 1]
 
   if (type.extreme) {
-    if (dice >= type.extreme) return 'Extremo'
-    if (dice >= type.good) return 'Sucesso Bom'
+    if (dice >= type.extreme) return 'Falha Crítica'
+    if (dice >= type.good) return 'Falha Normal'
     if (dice >= type.normal) return 'Sucesso Normal'
-    if (dice <= type.normal) return 'Fracasso'
+    if (dice <= type.normal) return 'Sucesso Crítico'
   } else if (type.good) {
-    if (dice >= type.good) return 'Sucesso Bom'
+    if (dice >= type.good) return 'Falha'
     if (dice >= type.normal) return 'Sucesso Normal'
-    if (dice <= type.normal) return 'Fracasso'
+    if (dice <= type.normal) return 'Sucesso Crítico'
   } else if (type.normal) {
     if (dice >= type.normal) return 'Sucesso Normal'
-    if (dice <= type.normal) return 'Fracasso'
+    if (dice <= type.normal) return 'Sucesso Crítico'
   }
 }
-
 function rollDice(dice) {
   let [count, max] = dice.split('d')
 
@@ -405,12 +397,7 @@ function addWeaponToTable(weapon, id) {
         </td>
         <td>${weapon.type}</td>
         <td>${weapon.damage}</td>
-        <td>${weapon.numCurrent}</td>
-        <td>${weapon.numMax}</td>
         <td>${weapon.attack}</td>
-        <td>${weapon.reach}</td>
-        <td>${weapon.defect}</td>
-        <td>${weapon.area}</td>
     </tr>`)
   $('table#weapons').append(newWeapon)
 }
