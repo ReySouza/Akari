@@ -134,6 +134,12 @@ const sanityModal = $('#sanityModal')
 const staminaModal = $('#staminaModal')
 const manaModal = $('#manaModal')
 
+const input = document.querySelector("input");
+input.addEventListener("input", function(event) {
+  console.log(event.target.value);
+});
+
+
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
     diceModal.css('display', 'none')
