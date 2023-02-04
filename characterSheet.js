@@ -45,23 +45,6 @@ const data = {
     },
   ],
 
-  vantages: [
-    {
-      name: 'Tato Aguçado',
-      cost: '9',
-      description: '+3 em testes que envolvam o sentido do tato',
-    },
-    {
-      name: 'Audição Aguçada',
-      cost: '6',
-      description: '+2 em testes que envolvam o sentido da audição',
-    },
-     {
-      name: 'Ambidestria',
-      cost: '10',
-      description: 'Reduz modificador de -4 ao atacar com mão não dominante',
-    },
-  ],
   attributes: [
     {
       type: 'Força',
@@ -112,10 +95,6 @@ const data = {
 
 data.weapons.map((weapon, index) => {
   addWeaponToTable(weapon, index)
-})
-
-data.vantages.map((vantage, index) => {
-  addVantageToTable(vantage, index)
 })
 
 data.attributes.map((attribute, index) => {
@@ -223,10 +202,6 @@ $('#addWeapon').click(function () {
   openModal('#addWeaponModal')
 })
 
-$$('#addVantage').click(function () {
-  openModal('#addVantageModal')
-})
-
 $('#lesion').change(function () {
   if (this.checked) {
     console.log('Modo lesionamento grave ativado!')
@@ -292,33 +267,6 @@ $('#addWeaponForm').submit(function (event) {
   closeModal('#addWeaponModal')
   event.preventDefault()
 })
-
-$('#addVantageForm').submit(function (event) {
-  var vantageType = ''
-
-  if ($('#vantageType').val() == 'fire') {
-    vantageType = 'Fogo'
-  } else if ($('#vantageType').val() == 'arch') {
-    vantageType = 'Arco'
-  } else if ($('#vantageType').val() == 'fight') {
-    vantageType = 'Briga'
-  }
-
-  const vantage = {
-    name: $('#vantageName').val(),
-    type: vantageName,
-    damage: $('#vantageCost').val(),
-    attack: $('#vantageDescription').val(),
-  }
-
-  data.vantage.push(vantage)
-  const id = data.vantage.length - 1
-  addVantageToTable(vantage, id)
-
-  closeModal('#addVantageModal')
-  event.preventDefault()
-})
-
 
 $('#changeLife').submit(function (event) {
   let current = Number($('#lifeCurrent').val())
@@ -486,21 +434,6 @@ function addWeaponToTable(weapon, id) {
   $('table#weapons').append(newWeapon)
 }
 
-function addVantageToTable(vantage, id) {
-  const newVantage = $(`<tr id="vantage_${id}">
-        <td>
-            <button onclick="deleteVantage(${id})">
-                <i class="fa fa-trash-o trashcan"></i>
-            </button>
-            ${vantage.name}
-        </td>
-        <td>${vantage.type}</td>
-        <td>${vantage.cost}</td>
-        <td>${vantage.description}</td>
-    </tr>`)
-  $('table#vantage').append(newVantage)
-}
-
 function addAttribute(attribute, id) {
   const newAttribute = $(`<div class="attribute" id="attribute_${id}">
     <a onclick="rollAtribute('${attribute.type}', ${attribute.amount})">
@@ -513,9 +446,5 @@ function addAttribute(attribute, id) {
 }
 
 function deleteWeapon(id) {
-  $(`tr#${id}`).remove()
-}
-
-function deleteVantgae(id) {
   $(`tr#${id}`).remove()
 }
