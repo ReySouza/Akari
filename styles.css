@@ -102,27 +102,27 @@ h2.grid-title {
     grid-area: attributes;
 }
 
-.advantages { 
-    grid-area: advantages;
+.expertise { 
+    grid-area: expertise;
     height: 400px;
 }
 
-.skills { 
-    grid-area: skills;
+.expertise2 { 
+    grid-area: expertise2;
     height: 400px;
 }
 
-.skills .grid-title {
+.expertise2 .grid-title {
     flex: 1;
 }
 
-.skills .skillHeader {
+.expertise2 .skillHeader {
     display: flex;
     flex-direction: row;
     justify-self: center;
 }
 
-.skills .skillHeader button {
+.expertise2 .skillHeader button {
     align-self: center;
     width: 25px;
     height: 25px;
