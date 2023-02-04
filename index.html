@@ -151,6 +151,50 @@
       </div>
     </div>
 
+ <div id="addSpellModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>ADICIONAR MAGIA</h2>
+        <hr />
+        <form id="addSpellForm" action="">
+          <table class="spells" id="newSpell">
+            <tr>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th>Gasto</th>
+              <th>Tempo de conjuração</th>
+              <th>Duração</th>
+              <th>Descrição</th>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="spellName" id="spellName" />
+              </td>
+              <td>
+                <select id="spellType" name="spellType">
+                  <option value="seasonal">Sazonal</option>
+                  <option value="esoterica">Esoterica</option>}
+                  <option value="youjutsu">Youjutsu</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="spellmana" id="spellmana" />
+              </td>
+              <td>
+                <input type="text" name="spellcasting" id="spellcasting" />
+              </td>
+               <td>
+                <input type="text" name="spellduration" id="spellduration" />
+              </td>
+              <td>
+                <input type="text" name="spelldescription" id="spelldescription" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
     <div class="container">
       <div class="details border">
         <h2 class="grid-title">DETALHES PESSOAIS</h2>
@@ -279,7 +323,20 @@
 
       <div class="skills border">
         <h2 class="grid-title">Habilidades</h2>
+        <button id="addSpell">&plus;</button>
+        </div>
         <hr />
+
+       <table class="spells" id="spells">
+          <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Gasto</th>
+            <th>Tempo de conjuração</th>
+            <th>Duração</th>
+            <th>Descrição</th>
+          </tr>
+        </table>
       </div>
     </div>
 
