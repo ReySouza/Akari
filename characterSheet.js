@@ -22,6 +22,12 @@ const data = {
     current: 24,
     max: 24,
   },
+   points: {
+    current: 0,
+  },
+   energy: {
+    current: 12,
+  },
 
   weapons: [
     {
