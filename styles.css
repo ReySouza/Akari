@@ -143,8 +143,8 @@ h2.grid-title {
   align-items: center;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(25%, 25%);
+  left: 40%;
+  transform: translate(75%, 75%);
   z-index: 1;
 }
 
