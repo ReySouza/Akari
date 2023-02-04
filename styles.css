@@ -133,10 +133,6 @@ h2.grid-title {
     margin-right: 50px;
 }
 
-.skill.active {
-  background-color: green;
-}
-
 .combat {
     grid-area: combat;
     height: 400px;
