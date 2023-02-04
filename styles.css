@@ -139,8 +139,11 @@ h2.grid-title {
   height: 100px;
   border-radius: 50%;
   display: flex;
-  justify-content: right;
-  align-items: top;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #text-input {
