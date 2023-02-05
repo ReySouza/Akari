@@ -12,18 +12,22 @@ const data = {
     current: 12,
     max: 28,
   },
+
   sanity: {
     current: 15,
     max: 24,
   },
+
   stamina: {
     current: 4,
     max: 11,
   },
+
    mana: {
     current: 24,
     max: 24,
   },
+
   weapons: [
     {
       name: 'Gohei',
