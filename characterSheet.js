@@ -99,7 +99,7 @@ const data = {
     {
       name: 'Força',
       cost: 10,
-      description:,
+      description: 'Sim',
     },
   ],
 }
