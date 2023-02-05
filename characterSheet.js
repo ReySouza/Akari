@@ -95,6 +95,13 @@ const data = {
       amount: 10,
     },
   ],
+    expertise: [
+    {
+      name: 'Força',
+      cost: 10,
+      description:,
+    },
+  ],
 }
 
 data.weapons.map((weapon, index) => {
