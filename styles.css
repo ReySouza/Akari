@@ -143,9 +143,8 @@ h2.grid-title {
   align-items: center;
   position: absolute;
   top: 90%;
-  left: 40%;
-  transform: translate(500%, 800%);
-  z-index: 1;
+  left: 60%;
+  transform: translate(200%, 600%);
 }
 
 #text-input {
