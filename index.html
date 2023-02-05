@@ -151,6 +151,35 @@
       </div>
     </div>
 
+      <div id="addExpertiseModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>ADICIONAR VANTAGEM</h2>
+        <hr />
+        <form id="addExpertiseForm" action="">
+          <table class="vantage" id="newvantage">
+            <tr>
+              <th>Nome</th>
+              <th>Gasto</th>
+              <th>Descrição</th>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="vantageName" id="vantageName" />
+              </td>
+              <td>
+                <input type="text" name="vantageCost" id="vantageCost" />
+              </td>
+              <td>
+                <input type="text" name="vantageDescription" id="vantageDescription" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
+
     <div class="container">
       <div class="details border">
         <h2 class="grid-title">DETALHES PESSOAIS</h2>
@@ -255,9 +284,20 @@
       </div>
 
         <div class ="expertise border">
-          <h2 class="grid-title">Vantagens</h2>
+          <div class="expertiseHeader">
+           <h2 class="grid-title">Vantagens</h2>
+            <button id="addExpertise">%plus;</button>
         <hr />
-        </div>
+           </div>
+        
+         <table class="vantages" id="vantages">
+            <tr>
+                <th>Nome</th>
+                <th>Gasto</th>
+                <th>Descrição</th>
+            </tr>
+          </table>
+       </div>
 
         <div id="circle">
           <input type="text" id="text-input">
