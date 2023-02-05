@@ -144,7 +144,7 @@ h2.grid-title {
   position: absolute;
   top: 90%;
   left: 40%;
-  transform: translate(500%, 500%);
+  transform: translate(500%, 800%);
   z-index: 1;
 }
 
