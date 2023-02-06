@@ -97,9 +97,44 @@ const data = {
   ],
     expertise: [
     {
-      name: 'Força',
+      name: 'Tato Aguçado (+3)',
+      cost: 9,
+      description: '+3 em testes que envolvam o tato',
+    },
+      {
+      name: 'Audição Aguçada (+2)',
+      cost: 6,
+      description: '+2 em testes que envolvam a audição',
+    },
+      {
+      name: 'Ambidestria',
       cost: 10,
-      description: 'Sim',
+      description: 'Pode realizar testes com as duas mãos sem modificador de -4',
+    },
+      {
+      name: 'Bloqueio Ampliado',
+      cost: 5,
+      description: '+1 em testes de bloqueio com escudo ou parry',
+    },
+      {
+      name: 'Samjña',
+      cost: 5,
+      description: 'Ao suceder em um teste de HT, pode utilizar Esoterica para conjurar habilidades sazonais',
+    },
+      {
+      name: 'Médium',
+      cost: 5,
+      description: '+1 em teste para localizar e se comunicar com espíritos que habitam em lugares, pessoas e objetos',
+    },
+      {
+      name: 'Iaijutsu,
+      cost: 0,
+      description: '+1 em testes de linguagem corporal, uso de sai e saques rápidos com armas de uma ou duas mãos',
+    },
+      {
+      name: 'Hipoalgia',
+      cost: 6,
+      description: '+3 para evitar quedas e resistir a dor física',
     },
   ],
 }
