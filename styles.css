@@ -207,6 +207,10 @@ table.expertise td button {
     margin-right: 50px;
 }
 
+.expertise2 td:nth-child(2).Sazonal {
+   color: #FFCCCC;
+  }
+
 table.expertise2 {
     display: block;
     margin: 0;
