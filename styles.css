@@ -89,7 +89,7 @@ h2.grid-title {
 .characterPhoto {
     border: solid;
     border-width: 2px;
-    border-color: #a2a2a2;
+    border-color: #ff0000;
     border-radius: 50%;
 }
 
@@ -124,7 +124,7 @@ h2.grid-title {
     color: #fff;
     font-size: 22px;
     background: #0a0b0c;
-    border: 0.1px solid #a2a2a2;
+    border: 0.1px solid #ff0000;
     margin-right: 50px;
 }
 
@@ -203,12 +203,12 @@ table.expertise td button {
     color: #fff;
     font-size: 22px;
     background: #0a0b0c;
-    border: 0.1px solid #a2a2a2;
+    border: 0.1px solid #ff0000;
     margin-right: 50px;
 }
 
 .expertise2 td:nth-child(2).Sazonal {
-   color: #FFCCCC;
+   color: #ff0000;
   }
 
 table.expertise2 {
