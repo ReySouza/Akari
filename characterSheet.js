@@ -148,6 +148,10 @@ data.expertise.map((expertise, index) => {
    addExpertiseToTable(expertise, index)
 })
 
+data.expertise2.map((expertise2, index) => {
+   addExpertise2ToTable(expertise2, index)
+})
+
 data.attributes.map((attribute, index) => {
   addAttribute(attribute, index)
 })
@@ -205,7 +209,11 @@ $(window).click(function (event) {
     sanityModal.css('display', 'none')
   } else if (event.target.id == 'addWeaponModal') {
     closeModal('#addWeaponModal')
-  }
+  } else if (event.target.id == 'addExpertiseModal') {
+     closeModal('#addExpertiseModal')
+  } else if (event.target.id == 'addExpertise2Modal') {
+     closeModal('#addExpertise2Modal')
+  } 
 })
 
 function rollAtribute(atribute, amount) {
@@ -261,6 +269,10 @@ $('#addWeapon').click(function () {
 
 $('#addExpertise').click(function() {
    openModal('#addExpertiseModal')
+})
+
+$('#addExpertise2').click(function() {
+   openModal('#addExpertise2Modal')
 })
 
 $('#lesion').change(function () {
@@ -343,7 +355,7 @@ $('#addExpertiseForm').submit(function (event) {
   const expertise = {
     name: $('#expertiseName').val(),
     cost: $('#expertiseCost').val(),
-    desription: $('#expertiseDescription').val(),
+    description: $('#expertiseDescription').val(),
   }
 
   data.expertise.push(expertise)
@@ -351,6 +363,35 @@ $('#addExpertiseForm').submit(function (event) {
   addExpertiseToTable(expertise, id)
 
   closeModal('#addExpertiseModal')
+  event.preventDefault()
+})
+
+$('#addExpertise2Form').submit(function (event) {
+  var expertise2Type = ''
+
+  if ($('#expertise2Type').val() == 'seasonal') {
+    expertise2Type = 'Sazonal'
+  } else if ($('#expertise2Type').val() == 'esoterica') {
+    expertise2Type = 'Esoterica'
+  } else if ($('#expertise2Type').val() == 'youjutsu') {
+    expertise2Type = 'Youjutsu'
+  }
+
+  const expertise2 = {
+    name: $('#expertise2Name').val(),
+    type: $('#expertise2Type').val(),
+    cost: $('#expertise2Cost').val(),
+    time: $('#expertise2Time').val(),
+    duration: $('#expertise2Duration').val(),
+    description: $('#expertiseDescription').val(),
+    
+  }
+
+  data.expertise2.push(expertise2)
+  const id = data.expertise2.length - 1
+  addExpertise2ToTable(expertise2, id)
+
+  closeModal('#addExpertise2Modal')
   event.preventDefault()
 })
 
@@ -534,6 +575,23 @@ function addExpertiseToTable(expertise, id) {
   $('table#expertise').append(newexpertise)
 }
 
+function addExpertise2ToTable(expertise2, id) {
+  const newexpertise2 = $(`<tr id="expertise2_${id}">
+        <td>
+            <button onclick="deleteExpertise2(${id})">
+                <i class="fa fa-trash-o trashcan"></i>
+            </button>
+            ${expertise2.name}
+        </td>
+        <td>${expertise2.type}</td>
+        <td>${expertise2.cost}</td>
+        <td>${expertise2.time}</td>
+        <td>${expertise2.duration}</td>
+        <td>${expertise2.description}</td>
+    </tr>`)
+  $('table#expertise2').append(newexpertise2)
+}
+
 function addAttribute(attribute, id) {
   const newAttribute = $(`<div class="attribute" id="attribute_${id}">
     <a onclick="rollAtribute('${attribute.type}', ${attribute.amount})">
@@ -550,5 +608,9 @@ function deleteWeapon(id) {
 }
 
 function deleteExpertise(id) {
+  $(`tr#${id}`).remove()
+}
+
+function deleteExpertise2(id) {
   $(`tr#${id}`).remove()
 }
