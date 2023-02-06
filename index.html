@@ -179,6 +179,49 @@
       </div>
     </div>
 
+       <div id="addExpertise2Modal" class="modal with-input">
+      <div class="modal-content">
+        <h2>ADICIONAR HABILIDADE</h2>
+        <hr />
+        <form id="addExpertise2Form" action="">
+          <table class="expertise2" id="newexpertise2">
+            <tr>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th>Gasto</th>
+              <th>Tempo de Conjuração</th>
+              <th>Duração</th>
+              <th>Descrição</th>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="expertise2Name" id="expertise2Name" />
+              </td>
+              <td>
+                <select id="expertise2Type" name="expertise2Type">
+                  <option value="esoterica">Esoterica</option>
+                  <option value="youjutsu">Youjutsu</option>
+                  <option value="seasonal">Sazonal</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="expertise2Cost" id="expertise2Cost" />
+              </td>
+              <td>
+                <input type="text" name="expertise2Time" id="expertise2Time" />
+              </td>
+              <td>
+                <input type="text" name="expertise2Duration" id="expertise2Duration" />
+              </td>
+              <td>
+                <input type="text" name="expertise2Description" id="expertise2Description" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
 
     <div class="container">
       <div class="details border">
@@ -322,9 +365,22 @@
       </div>
 
       <div class="expertise2 border">
+        <div class="expertise2Header">
         <h2 class="grid-title">HABILIDADES</h2>
+          <button id="addExpertise2">+</button>
         <hr />
       </div>
+
+      <table class="expertise2" id="expertise2">
+        <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Gasto</th>
+            <th>Tempo de Conjuração</th>
+            <th>Duração</th>
+            <th>Descrição</th>
+        </tr>
+      </table>
      </div>
 
     <script src="characterSheet.js"></script>
