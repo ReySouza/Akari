@@ -383,7 +383,7 @@ $('#addExpertise2Form').submit(function (event) {
     cost: $('#expertise2Cost').val(),
     time: $('#expertise2Time').val(),
     duration: $('#expertise2Duration').val(),
-    description: $('#expertiseDescription').val(),
+    description: $('#expertise2Description').val(),
     
   }
 
