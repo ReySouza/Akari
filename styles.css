@@ -189,13 +189,13 @@ table.expertise td button {
     flex: 1;
 }
 
-.expertise2 .skillHeader {
+.expertise2 .expertiseHeader {
     display: flex;
     flex-direction: row;
     justify-self: center;
 }
 
-.expertise2 .skillHeader button {
+.expertise2 .expertise2Header button {
     align-self: center;
     width: 25px;
     height: 25px;
@@ -206,26 +206,56 @@ table.expertise td button {
     margin-right: 50px;
 }
 
-#circle {
-  background-color: black;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 90%;
-  left: 60%;
-  transform: translate(200%, 600%);
+table.expertise2 {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-end: auto;
+    border-collapse: collapse;
+    width: 90%;
 }
 
-#text-input {
-  color: white;
-  background-color: transparent;
-  border: none;
+table.expertise2 tr:first-child {
+    border-bottom: 2px solid #a2a2a2;
 }
 
+table.expertise2 tr {
+    border-bottom: 0.1px solid #a2a2a2;
+}
+
+table.expertise2 th {
+    text-align: center;
+    height: 25px;
+    width: 10%;
+}
+
+table.expertise2 td {
+    text-align: center;
+    height: 35px;
+}
+
+table.expertise2 td input {
+    text-align: center;
+    width: 65%;
+    border-bottom: 0.1px solid #a2a2a2;
+}
+
+table.expertise2 td select {
+    font-size: 16px;
+}
+
+
+table.expertise2 td button {
+    color: #fff;
+    background: #0a0b0c;
+}
+
+.trashcan {
+    color:white;
+    width: 15px;
+    font-size: 17px;
+}
 
 .combat {
     grid-area: combat;
