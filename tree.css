@@ -6,5 +6,6 @@ body {
 #SkillTree {
   display: block;
   margin: 0 auto;
-  widht: 50%;
+  width: 50%;
+  height: auto;
 }
