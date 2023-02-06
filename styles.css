@@ -104,8 +104,8 @@ h2.grid-title {
 
 .expertise { 
     grid-area: expertise;
-    height: 400px;
-}
+    height: 800px;
+} 
 
 .expertise .grid-title {
     flex: 1;
@@ -155,6 +155,7 @@ table.expertise th {
 table.expertise td {
     text-align: center;
     height: 35px;
+    font-size: 12px;
 }
 
 table.expertise td input {
