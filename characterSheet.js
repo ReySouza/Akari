@@ -161,7 +161,7 @@ const data = {
       damage: '3d6+5',
       time: '1 turno',
       duration: '1 turno',
-      description: 'Pode moldar rochas no formato de onbashiras que então podem ser arremessados com DEX-1, ao suceder, os alvos tomam 3d6+5 de dano e as onbashiras ficam fincadas no chão até que você as erga sem teste',
+      description: 'Você molda rochas no formato de onbashiras que então podem ser arremessadas com DEX-1, as onbashiras ficam fincadas no chão até que você as erga',
     },
     {
       name: '奥義  ~ Ritual de caça de misayama',
@@ -170,7 +170,8 @@ const data = {
       damage: '4d6+2',
       time: 'até 1 hora',
       duration: 'indefinido',
-      description: 'Você pode ser possuído por um espírito divino a qual você tenha entrado em contato, esta habilidade também permite que você invoque as vinhas de Wisteria, um chicote de vinhas pontudas, a arma sagrada de Takeminakata e do templo de Suwa',
+      description: 'Você pode ser possuído por um espírito divino a qual você tenha entrado em contato,
+       esta habilidade também permite que você invoque as vinhas de Wisteria, a arma sagrada do templo de Suwa',
     },
    {
       name: '彼岸剣  ~ Desilusão Corpórea',
@@ -179,7 +180,8 @@ const data = {
       damage: 0,
       time: '1 turno',
       duration: '3 turnos',
-      description: 'Sua metade fantasma pode se duplicar em até 4 vezes e assumir a sua forma, durante este período, os clones terão acesso ao seu arsenal de armas, mas não suas habilidades, eles irão copiar todos os seus movimentos com um leve atraso',
+      description: 'Sua metade fantasma pode se duplicar em até 4 vezes e assumir a sua forma,
+      os clones terão acesso ao seu arsenal de armas, mas não suas habilidades, eles irão copiar todos os seus movimentos com um leve atraso',
     },
    {
       name: '修羅剣  ~ Obsessão com o mundo presente',
@@ -188,7 +190,7 @@ const data = {
       damage: 0,
       time: '1 turno',
       duration: 'até o alvo se libertar',
-      description: 'Sua metade fantasma é capaz de possuir e tomar o corpo de um alvo, este alvo deve realizar um teste de VON para evitar a possessão, se ele for um espírito ou possuir a vantagem de médium, ele fará o teste com +3, ele repetirá o teste no fim de cada turno caso falhar ',
+      description: 'Sua metade fantasma é capaz de possuir e tomar o corpo de um alvo, este alvo deve realizar um teste de VON para evitar a possessão, ele repetirá o teste no fim de cada turno caso falhar ',
     },
       {
       name: '裏土曜  ~ 3 Kons, 7 Hakus',
@@ -197,7 +199,10 @@ const data = {
       damage: 0,
       time: '1 turno',
       duration: 'depende',
-      description: 'As chamas em suas costas criam uma aura de decadência e apodrecimento em torno de você, esta aura reduzirá o dano de qualquer ataque que passar por ela por 1d6, seja ele físico ou mágico, além disso, itens de ferro que atravessarem a aura começarão a enferrujar. Durante o doyo, você sente esta aura mais forte, você pode destacar ela de seu corpo e posicionar ela em algum ponto, durante as monsões, esta habilidade também reduzirá seus ataques em 1d6 ',
+      description: 'As chamas em suas costas criam uma aura de decadência e apodrecimento em torno de você, 
+esta aura reduzirá o dano de qualquer ataque que passar por ela por 1d6, além disso, itens de ferro que atravessarem a aura começarão a enferrujar. 
+Durante o doyo, você poderá destacar ela de seu corpo e posicionar ela em algum outro ponto, 
+durante as monsões, esta habilidade também reduzirá seus ataques',
     },
        {
       name: '裏土曜  ~ Migração das borboletas de Makai',
@@ -206,7 +211,10 @@ const data = {
       damage: '4d6 (+1d6)',
       time: '1 turno',
       duration: '1d6+1',
-      description: 'As chamas em suas costas se transformam em borboletas vermelhas que voam até o alvo, ele deve suceder em um teste de dificuldade 12 ou tomará 4d6 de dano, ou metade em caso de sucesso. Ao seu comando, as borboletas podem permanecer no alvo e drenar sua energia sazonal, durante a duração do ataque, ele não poderá usar habilidades sazonais e tomará 1d6 por turno. Durante o doyou, o teste será substituido pelo teste de um atributo de sua preferencia, durante as monsões, você não terá controle sobre a direção das borboletas',
+      description: 'As chamas em suas costas se transformam em borboletas vermelhas que voam até o alvo, ele deve suceder em um teste de dificuldade 12 ou tomará 4d6 de dano, 
+ou metade em caso de sucesso. Ao seu comando, as borboletas podem permanecer no alvo e drenar sua energia sazonal, durante a duração do ataque, ele não poderá usar habilidades sazonais e tomará 1d6 por turno. 
+Durante o doyou, o teste será substituido pelo teste de um atributo de sua preferencia, durante as monsões, 
+você não terá controle sobre a direção das borboletas',
     },
       {
       name: '裏土曜  ~ Destino ligado por cedros',
@@ -224,7 +232,7 @@ const data = {
       damage: 0,
       time: '1 turno',
       duration: '1 turno',
-      description: ' Você drena a energia da estação local para você e seus companheiros, transformando a em 1d6 de Poder Sazonal, 2d6 de ponto de fatiga ou 3d6 de esoterica ou youjutsu, durante 2d6 turnos, a área ficará sem qualquer energia sazonal, tirando vantagens e desvantagens',
+      description: ' Você drena a energia da estação local para você e seus companheiros podendo gerar: 1d6 de energia sazonal, 2d6 de pontos de fatiga e 3d6 de esoterica/youjutsu, durante 2d6 turnos, a área ficará sem qualquer estação, durante o doyo, aumente 1d6 para cada um destes dados, durante as monsões, diminua 1d6',
     },
   ],
    
