@@ -95,6 +95,7 @@ const data = {
       amount: 10,
     },
   ],
+
     expertise: [
     {
       name: 'Tato Aguçado (+3)',
