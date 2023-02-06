@@ -7,6 +7,7 @@ const data = {
   birthplace: 'Suwa',
   points: 0,
   energy: 12,
+  season: 12
 
   life: {
     current: 12,
@@ -245,6 +246,7 @@ $('#occupation').val(data.occupation)
 $('#age').val(data.age)
 $('#sex').val(data.sex)
 $('#birthplace').val(data.birthplace)
+$('#season').val(data.season)
 
 $('.lifeBar').css('width', `${calculateBar(data.life.current, data.life.max)}%`)
 $('#lifeCount').text(`${data.life.current}/${data.life.max}`)
