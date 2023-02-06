@@ -2,3 +2,8 @@ body {
         background: linear-gradient(to bottom, #111111, #550000);
         color: white;
       }
+#Centro {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
