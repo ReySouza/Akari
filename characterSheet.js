@@ -138,6 +138,11 @@ const data = {
       cost: 6,
       description: '+3 para evitar quedas e resistir a dor física',
     },
+      {
+      name: 'Sentido de Vibração',
+      cost: 8,
+      description: 'Você consegue detectar o tamanho e a localização de algo a partir de vibrações captadas pela sua pele',
+    },
   ],
         expertise2: [
     {
@@ -246,6 +251,8 @@ $('#occupation').val(data.occupation)
 $('#age').val(data.age)
 $('#sex').val(data.sex)
 $('#birthplace').val(data.birthplace)
+$('#points').val(data.points)
+$('#energy').val(data.energy)
 $('#season').val(data.season)
 
 $('.lifeBar').css('width', `${calculateBar(data.life.current, data.life.max)}%`)
