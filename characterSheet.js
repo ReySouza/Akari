@@ -7,7 +7,7 @@ const data = {
   birthplace: 'Suwa',
   points: 0,
   energy: 12,
-  season: 12
+  season: 12,
 
   life: {
     current: 12,
