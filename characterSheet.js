@@ -170,8 +170,7 @@ const data = {
       damage: '4d6+2',
       time: 'até 1 hora',
       duration: 'indefinido',
-      description: 'Você pode ser possuído por um espírito divino a qual você tenha entrado em contato,
-       esta habilidade também permite que você invoque as vinhas de Wisteria, a arma sagrada do templo de Suwa',
+      description: 'Você pode ser possuído por um espírito divino a qual você tenha entrado em contato, esta habilidade também permite que você invoque as vinhas de Wisteria, a arma sagrada do templo de Suwa',
     },
    {
       name: '彼岸剣  ~ Desilusão Corpórea',
@@ -180,8 +179,7 @@ const data = {
       damage: 0,
       time: '1 turno',
       duration: '3 turnos',
-      description: 'Sua metade fantasma pode se duplicar em até 4 vezes e assumir a sua forma,
-      os clones terão acesso ao seu arsenal de armas, mas não suas habilidades, eles irão copiar todos os seus movimentos com um leve atraso',
+      description: 'Sua metade fantasma pode se duplicar em até 4 vezes e assumir a sua forma, os clones terão acesso ao seu arsenal de armas, mas não suas habilidades, eles irão copiar todos os seus movimentos com um leve atraso',
     },
    {
       name: '修羅剣  ~ Obsessão com o mundo presente',
@@ -199,10 +197,7 @@ const data = {
       damage: 0,
       time: '1 turno',
       duration: 'depende',
-      description: 'As chamas em suas costas criam uma aura de decadência e apodrecimento em torno de você, 
-esta aura reduzirá o dano de qualquer ataque que passar por ela por 1d6, além disso, itens de ferro que atravessarem a aura começarão a enferrujar. 
-Durante o doyo, você poderá destacar ela de seu corpo e posicionar ela em algum outro ponto, 
-durante as monsões, esta habilidade também reduzirá seus ataques',
+      description: 'As chamas em suas costas criam uma aura de decadência e apodrecimento em torno de você, esta aura reduzirá o dano de qualquer ataque que passar por ela por 1d6, além disso, itens de ferro que atravessarem a aura começarão a enferrujar. Durante o doyo, você poderá destacar ela de seu corpo e posicionar ela em algum outro ponto, durante as monsões, esta habilidade também reduzirá seus ataques',
     },
        {
       name: '裏土曜  ~ Migração das borboletas de Makai',
@@ -211,10 +206,7 @@ durante as monsões, esta habilidade também reduzirá seus ataques',
       damage: '4d6 (+1d6)',
       time: '1 turno',
       duration: '1d6+1',
-      description: 'As chamas em suas costas se transformam em borboletas vermelhas que voam até o alvo, ele deve suceder em um teste de dificuldade 12 ou tomará 4d6 de dano, 
-ou metade em caso de sucesso. Ao seu comando, as borboletas podem permanecer no alvo e drenar sua energia sazonal, durante a duração do ataque, ele não poderá usar habilidades sazonais e tomará 1d6 por turno. 
-Durante o doyou, o teste será substituido pelo teste de um atributo de sua preferencia, durante as monsões, 
-você não terá controle sobre a direção das borboletas',
+      description: 'As chamas em suas costas se transformam em borboletas vermelhas que voam até o alvo, ele deve suceder em um teste de dificuldade 12 ou tomará 4d6 de dano, ou metade em caso de sucesso. Ao seu comando, as borboletas podem permanecer no alvo e drenar sua energia sazonal, durante a duração do ataque, ele não poderá usar habilidades sazonais e tomará 1d6 por turno. Durante o doyou, o teste será substituido pelo teste de um atributo de sua preferencia, durante as monsões, você não terá controle sobre a direção das borboletas',
     },
       {
       name: '裏土曜  ~ Destino ligado por cedros',
