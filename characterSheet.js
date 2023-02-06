@@ -5,7 +5,7 @@ const data = {
   age: 25,
   sex: 'female',
   birthplace: 'Suwa',
-  points: 0,
+  points: 7,
   energy: 12,
   season: 12,
 
