@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
     background: #0a0b0c;
     color: #fff;
     font-family: 'Itim', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        'details details details character'
+        'attributes attributes attributes expertise'
+        'combat combat combat combat'
+        'expertise2 expertise2 expertise2 expertise2';
+    grid-gap: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 
 #SkillTree {
   display: block;
