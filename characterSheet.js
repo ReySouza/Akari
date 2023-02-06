@@ -128,7 +128,7 @@ const data = {
       description: '+1 em teste para localizar e se comunicar com espíritos que habitam em lugares, pessoas e objetos',
     },
       {
-      name: 'Iaijutsu,
+      name: 'Iaijutsu',
       cost: 0,
       description: '+1 em testes de linguagem corporal, uso de sai e saques rápidos com armas de uma ou duas mãos',
     },
