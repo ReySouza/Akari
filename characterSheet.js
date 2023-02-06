@@ -10,7 +10,7 @@ const data = {
 
   life: {
     current: 12,
-    max: 28,
+    max: 36,
   },
 
   sanity: {
@@ -138,6 +138,66 @@ const data = {
       description: '+3 para evitar quedas e resistir a dor física',
     },
   ],
+        expertise2: [
+    {
+      name: '秘伝  ~ Shintai',
+      type: 'Esoterica',
+      cost: 0,
+      time: '4 horas'
+      duration: '12 horas'
+      description: 'Durante 12 horas, você pode tornar qualquer objeto sagrado, isto fará com que o objeto passe a gerar Esoterica',
+    },
+    {
+      name: '神祭  ~ Dança de Medoteko',
+      type: 'Esoterica',
+      cost: 3,
+      time: '1 turno'
+      duration: '1 turno'
+      description: 'Pode moldar rochas no formato de onbashiras que então podem ser arremessados com DEX-1, ao suceder, os alvos tomam 3d6+5 de dano e as onbashiras ficam fincadas no chão até que você as erga sem teste',
+    },
+    {
+      name: '奥義  ~ Ritual de caça de misayama',
+      type: 'Esoterica',
+      cost: 4,
+      time: 'até 1 hora'
+      duration: 'indefinido'
+      description: 'Você pode ser possuído por um espírito divino a qual você tenha entrado em contato, esta habilidade também permite que você invoque as vinhas de Wisteria, um chicote de vinhas pontudas, a arma sagrada de Takeminakata e do templo de Suwa',
+    },
+   {
+      name: '彼岸剣  ~ Desilusão Corpórea',
+      type: 'Esoterica',
+      cost: 3 por clone,
+      time: '1 turno'
+      duration: '3 turnos'
+      description: 'Sua metade fantasma pode se duplicar em até 4 vezes e assumir a sua forma, durante este período, os clones terão acesso ao seu arsenal de armas, mas não suas habilidades, eles irão copiar todos os seus movimentos com um leve atraso',
+    },
+   {
+      name: '修羅剣  ~ Obsessão com o mundo presente',
+      type: 'Esoterica',
+      cost: 3,
+      time: '1 turno'
+      duration: 'até o alvo se libertar'
+      description: 'Sua metade fantasma é capaz de possuir e tomar o corpo de um alvo, este alvo deve realizar um teste de VON para evitar a possessão, se ele for um espírito ou possuir a vantagem de médium, ele fará o teste com +3, ele repetirá o teste no fim de cada turno caso falhar ',
+    },
+      {
+      name: '裏土曜  ~ 3 Kons, 7 Hakus',
+      type: 'Sazonal',
+      cost: 2 por turno,
+      time: '1 turno'
+      duration: 'depende'
+      description: 'As chamas em suas costas criam uma aura de decadência e apodrecimento em torno de você, esta aura reduzirá o dano de qualquer ataque que passar por ela por 1d6, seja ele físico ou mágico, além disso, itens de ferro que atravessarem a aura começarão a enferrujar. Durante o doyo, você sente esta aura mais forte, você pode destacar ela de seu corpo e posicionar ela em algum ponto, durante as monsões, esta habilidade também reduzirá seus ataques em 1d6 ',
+    },
+     {
+      name: '裏土曜  ~ 3 Kons, 7 Hakus',
+      type: 'Sazonal',
+      cost: 2 por turno,
+      time: '1 turno'
+      duration: 'depende'
+      description: 'As chamas em suas costas criam uma aura de decadência e apodrecimento em torno de você, esta aura reduzirá o dano de qualquer ataque que passar por ela por 1d6, seja ele físico ou mágico, além disso, itens de ferro que atravessarem a aura começarão a enferrujar. Durante o doyo, você sente esta aura mais forte, você pode destacar ela de seu corpo e posicionar ela em algum ponto, durante as monsões, esta habilidade também reduzirá seus ataques em 1d6 ',
+    },
+
+  ],
+   
 }
 
 data.weapons.map((weapon, index) => {
