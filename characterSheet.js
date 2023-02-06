@@ -158,7 +158,7 @@ const data = {
       name: '神祭  ~ Dança de Medoteko',
       type: 'Esoterica',
       cost: 3,
-      damage: '3d6+5'
+      damage: '3d6+5',
       time: '1 turno',
       duration: '1 turno',
       description: 'Pode moldar rochas no formato de onbashiras que então podem ser arremessados com DEX-1, ao suceder, os alvos tomam 3d6+5 de dano e as onbashiras ficam fincadas no chão até que você as erga sem teste',
