@@ -65,6 +65,7 @@ h2.grid-title {
     border: solid;
     border-width: 0.1px;
     border-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;
 }
 
 .box {
@@ -91,6 +92,7 @@ h2.grid-title {
     border-width: 2px;
     border-color: #ff0000;
     border-radius: 50%;
+    box-shadow: 0 0 10px #ff0000;
 }
 
 .dice {
@@ -126,6 +128,7 @@ h2.grid-title {
     background: #0a0b0c;
     border: 0.1px solid #ff0000;
     margin-right: 50px;
+    box-shadow: 0 0 10px #ff0000;
 }
 
 table.expertise {
@@ -205,10 +208,12 @@ table.expertise td button {
     background: #0a0b0c;
     border: 0.1px solid #ff0000;
     margin-right: 50px;
+    box-shadow: 0 0 10px #ff0000;
 }
 
 .expertise2 td:nth-child(2).Sazonal {
    color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;
   }
 
 table.expertise2 {
