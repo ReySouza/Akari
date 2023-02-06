@@ -1,9 +1,10 @@
 body {
-        background: linear-gradient(to bottom, #111111, #550000);
-        color: white;
-      }
+    background: #0a0b0c;
+    color: #fff;
+    font-family: 'Itim', sans-serif;
+
 #Centro {
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 200px;
 }
