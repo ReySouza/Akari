@@ -183,7 +183,7 @@ table.expertise td button {
 
 .expertise2 { 
     grid-area: expertise2;
-    height: 1000px;
+    height: 1800px;
 }
 
 .expertise2 .grid-title {
@@ -234,7 +234,7 @@ table.expertise2 th {
 table.expertise2 td {
     text-align: center;
     height: 35px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 table.expertise2 td input {
