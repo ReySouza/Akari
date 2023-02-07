@@ -14,19 +14,12 @@ body {
     height: 100%;
 }
 
-.container {
-    display: grid;
-    grid-template-areas: 
-        'details details details character'
-        'attributes attributes attributes expertise'
-        'combat combat combat combat'
-        'expertise2 expertise2 expertise2 expertise2';
-    grid-gap: 30px;
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
+  #container {
+    width: 4000px;
+    height: 4000px;
+    margin: 0 auto;
+    background-color: black;
+  }
 
 #SkillTree {
   display: block;
