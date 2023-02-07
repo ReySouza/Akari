@@ -67,10 +67,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
   font-size: 20px;
-  background-color: #555;
+  background-color: black;
   color: white;
   border-radius: 50%;
+  border: 2px solid white;
   width: 40px;
   height: 40px;
   display: flex;
