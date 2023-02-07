@@ -1,7 +1,7 @@
 document.getElementById("checkMark").addEventListener("click", function() {
-  if (this.innerHTML === "✔️") {
-    this.innerHTML = "⬜️";
+  if (this.innerHTML === "⬜️") {
+    this.innerHTML = "⚪️";
   } else {
-    this.innerHTML = "✔️";
+    this.innerHTML = "⬜️";
   }
 });
