@@ -1,9 +1,11 @@
 document.getElementById("openBtn").addEventListener("click", function() {
-  document.getElementById("sidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-});
-
-document.getElementById("closeBtn").addEventListener("click", function() {
-  document.getElementById("sidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  if (sidebar.style.width === "0px") {
+    sidebar.style.width = "250px";
+    main.style.marginLeft = "250px";
+  } else {
+    sidebar.style.width = "0";
+    main.style.marginLeft = "0";
+  }
 });
