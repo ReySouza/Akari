@@ -87,8 +87,8 @@ nav{
 
 .login-button:hover{
     color:#fff;
-    background-color: #dd5f24;
-    border:1.5px solid #dd5f24;
+    background-color: #ff0000;
+    border:1.5px solid #ff0000;
     transition: all ease-in-out 350ms;
 }
 
@@ -125,7 +125,7 @@ nav{
         transition: all 0.7s ease;
     }
     .nav-links{
-        background: #053742;
+        background: #6b0000;
         position: fixed;
         opacity: 1;
         height: 100vh;
