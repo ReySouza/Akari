@@ -1,7 +1,7 @@
 *{
     margin:0; padding:0;
-    color:#f2f5f7;
-    font-family: sans-serif;
+    color:#0a0b0c;
+    font-family: 'Itim', sans-serif;
     letter-spacing: 1px;
     font-weight: 300;
 }
@@ -17,7 +17,7 @@ nav{
     display: flex;
     position: fixed;
     z-index: 10;
-    background-color: #053742;
+    background-color: #ff0000;
     box-shadow: 0 3px 20px rgba(0,0,0,0.2);
 }
 
