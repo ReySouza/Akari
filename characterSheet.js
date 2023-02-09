@@ -745,3 +745,10 @@ hamburger.addEventListener('click', ()=>{
   button.addEventListener('click', function() {
     window.location.href = 'https://reysouza.github.io/Akari/';
   });
+
+ const toggleButton = document.querySelector('.toggle-button');
+  const sidebar = document.querySelector('.sidebar');
+
+  toggleButton.addEventListener('click', function() {
+    sidebar.classList.toggle('open');
+  });
