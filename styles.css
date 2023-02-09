@@ -852,28 +852,3 @@ nav{
         }
 
 }
-
-.sidebar {
-    width: 200px;
-    height: 100%;
-    background-color: lightgray;
-    position: fixed;
-    top: 50%;
-    left: -200px;
-    transform: translateY(-50%);
-    transition: left 0.5s ease-out;
-  }
-  
-  .sidebar.open {
-    left: 0;
-  }
-  
-  .toggle-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-  }
