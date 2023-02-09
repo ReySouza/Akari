@@ -909,3 +909,11 @@ nav{
           font-size: 18px;
         }
       }
+
+img {
+  height: 100%;
+}
+
+area {
+  fill: blue;
+}
