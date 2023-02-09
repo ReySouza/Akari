@@ -188,3 +188,36 @@ nav{
         }
 
 }
+
+input {
+    border: none;
+    border-bottom: 2px solid#a2a2a2;
+
+    padding: 3px 4px;
+    margin-bottom: 10px;
+    background-color: #0a0b0c;
+    color: #fff;
+
+    font-family: 'Itim', sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    border: none;
+    border-bottom: 2px solid#a2a2a2;
+
+    padding: 3px 4px;
+    margin-bottom: 10px;
+    background-color: #0a0b0c;
+    color: #fff;
+
+    font-family: 'Itim', sans-serif;
+}
+
+select:focus {
+    outline: none;
+}
+
