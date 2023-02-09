@@ -739,3 +739,9 @@ hamburger.addEventListener('click', ()=>{
       document.getElementById("inputDisplay").innerHTML = "Input: " + input;
       document.getElementById("outputDisplay").innerHTML = "Output: " + output;
     }
+
+
+  const button = document.querySelector('.login-button');
+  button.addEventListener('click', function() {
+    window.location.href = 'https://reysouza.github.io/Akari/';
+  });
