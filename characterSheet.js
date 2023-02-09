@@ -8,6 +8,7 @@ const data = {
   points: 7,
   energy: 12,
   season: 12,
+  focus: 5,
 
   life: {
     current: 12,
@@ -255,6 +256,7 @@ $('#birthplace').val(data.birthplace)
 $('#points').val(data.points)
 $('#energy').val(data.energy)
 $('#season').val(data.season)
+$('#focus').val(data.focus)
 
 $('.lifeBar').css('width', `${calculateBar(data.life.current, data.life.max)}%`)
 $('#lifeCount').text(`${data.life.current}/${data.life.max}`)
