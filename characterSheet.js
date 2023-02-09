@@ -729,3 +729,13 @@ hamburger.addEventListener('click', ()=>{
     //Animation
     hamburger.classList.toggle("toggle");
 });
+
+ function convertNumber() {
+      // Get the input value
+      var input = document.getElementById("input").value;
+      // Perform the conversion
+      var output = input * 2;
+      // Display the results
+      document.getElementById("inputDisplay").innerHTML = "Input: " + input;
+      document.getElementById("outputDisplay").innerHTML = "Output: " + output;
+    }
