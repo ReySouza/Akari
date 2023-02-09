@@ -852,3 +852,23 @@ nav{
         }
 
 }
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: lightgray;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: left 0.5s ease-out;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .toggle-button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
