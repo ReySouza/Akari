@@ -779,7 +779,8 @@ function closeSidebar() {
     let content;
     switch (title) {
       case "A Lenda da Guerreira que Celebra a Maidono":
-        content = "This is some custom content for the 'A Lenda da Guerreira que Celebra a Maidono' section.";
+        content = "<h4>Gasto: 0 Pontos de Foco</h4>
+        Este foco representa o inicio da árvore de foco da Akari";
         break;
       case "A Verdadeira Face do Deus Secreto":
         content = "This is some custom content for the 'A Verdadeira Face do Deus Secreto' section.";
