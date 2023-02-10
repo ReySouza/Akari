@@ -762,3 +762,29 @@ function openSidebar() {
 function closeSidebar() {
   document.getElementById("mySidebar").style.width = "0";
 }
+
+  const areas = document.querySelectorAll("area");
+  const sidebar = document.getElementById("mySidebar");
+
+  for (let area of areas) {
+    area.addEventListener("click", function() {
+      toggleNav();
+      updateSidebarContent(area.title);
+    });
+  }
+
+  function toggleNav() {
+    if (sidebar.style.display === "block") {
+      sidebar.style.display = "none";
+    } else {
+      sidebar.style.display = "block";
+    }
+  }
+
+  function updateSidebarContent(title) {
+    sidebar.innerHTML = `
+      <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
+      <h1>${title}</h1>
+      <p>This is some content for the ${title} section</p>
+    `;
+  }
