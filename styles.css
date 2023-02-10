@@ -910,15 +910,15 @@ nav{
         }
       }
 
-
-  /* hide the hot spots by default */
+  /* show the hot spots by default */
   area {
-    display: none;
+    background-color: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
   }
 
   /* style for hot spot when mouse is over it */
   area:hover {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 255, 0, 0.5);
     cursor: pointer;
   }
 
