@@ -784,6 +784,8 @@ function closeSidebar() {
   function updateSidebarContent(title) {
     sidebar.innerHTML = `
       <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
+      <br></br>
+      <br></br>
       <h1>${title}</h1>
       <p>This is some content for the ${title} section</p>
     `;
