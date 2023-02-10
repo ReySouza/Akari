@@ -757,3 +757,7 @@ hamburger.addEventListener('click', ()=>{
           main.style.marginLeft = "250px";
         }
       }
+
+  function showMessage(message) {
+    alert(message);
+  }
