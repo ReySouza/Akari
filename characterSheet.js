@@ -746,11 +746,19 @@ hamburger.addEventListener('click', ()=>{
     window.location.href = 'https://reysouza.github.io/Akari/';
   });
 
- function openSidebar() {
+function toggleSidebar() {
+  var sidebar = document.getElementById("mySidebar");
+  if (sidebar.style.width === "250px") {
+    closeSidebar();
+  } else {
+    openSidebar();
+  }
+}
+
+function openSidebar() {
   document.getElementById("mySidebar").style.width = "250px";
 }
 
 function closeSidebar() {
   document.getElementById("mySidebar").style.width = "0";
 }
-
