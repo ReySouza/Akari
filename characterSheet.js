@@ -763,7 +763,7 @@ function closeSidebar() {
   document.getElementById("mySidebar").style.width = "0";
 }
 
-  const areas = document.querySelectorAll("area");
+   const areas = document.querySelectorAll("area");
   const sidebar = document.getElementById("mySidebar");
 
   for (let area of areas) {
@@ -782,11 +782,25 @@ function closeSidebar() {
   }
 
   function updateSidebarContent(title) {
+    let content;
+    switch (title) {
+      case "A Lenda da Guerreira que Celebra a Maidono":
+        content = "This is some custom content for the 'A Lenda da Guerreira que Celebra a Maidono' section.";
+        break;
+      case "A Verdadeira Face do Deus Secreto":
+        content = "This is some custom content for the 'A Verdadeira Face do Deus Secreto' section.";
+        break;
+      case "Fé Nativa em meio a terra morta":
+        content = "This is some custom content for the 'Fé Nativa em meio a terra morta' section.";
+        break;
+      default:
+        content = "This is some default content for an undefined section.";
+    }
     sidebar.innerHTML = `
       <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
       <br></br>
       <br></br>
-      <h1>${title}</h1>
-      <p>This is some content for the ${title} section</p>
+      <h3>${title}</h3>
+      <p>${content}</p>
     `;
   }
