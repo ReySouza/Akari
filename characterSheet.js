@@ -247,6 +247,10 @@ data.attributes.map((attribute, index) => {
   addAttribute(attribute, index)
 })
 
+data.focus.map((focus, index) => {
+   addFocus(focus, index)
+})
+
 $('#name').val(data.name)
 $('#player').val(data.player)
 $('#occupation').val(data.occupation)
@@ -308,7 +312,9 @@ $(window).click(function (event) {
      closeModal('#addExpertiseModal')
   } else if (event.target.id == 'addExpertise2Modal') {
      closeModal('#addExpertise2Modal')
-  } 
+  } else if (event.target.id == 'addFocusModal') {
+      closeModal('#addFocusModal')
+  }
 })
 
 function rollAtribute(atribute, amount) {
@@ -458,6 +464,31 @@ $('#addExpertiseForm').submit(function (event) {
   addExpertiseToTable(expertise, id)
 
   closeModal('#addExpertiseModal')
+  event.preventDefault()
+})
+
+$('#addFocusForm').submit(function (event) {
+  var focusCost = ''
+
+  if ($('#focusCost').val() == 1) {
+    focusCost = 1
+  } else if ($('#focusCost').val() == 2) {
+    focusCost = 2
+  } else if ($('#focusCost').val() == 3) {
+    focusCost = 3
+  }
+
+  const focus = {
+    name: $('#focusName').val(),
+    cost: $('#focusCost').val(),
+    description: $('#focusDescription').val(),
+  }
+
+  data.focus.push(expertise)
+  const id = data.focus.length - 1
+  addFocusToTable(focus, id)
+
+  closeModal('#addFocusModal')
   event.preventDefault()
 })
 
@@ -669,6 +700,20 @@ function addExpertiseToTable(expertise, id) {
         <td>${expertise.description}</td>
     </tr>`)
   $('table#expertise').append(newexpertise)
+}
+
+function addFocusToTable(focus, id) {
+  const newfocus = $(`<tr id="focus_${id}">
+        <td>
+            <button onclick="deleteFocus(${id})">
+                <i class="fa fa-trash-o trashcan"></i>
+            </button>
+            ${focus.name}
+        </td>
+        <td>${focus.cost}</td>
+        <td>${focus.description}</td>
+    </tr>`)
+  $('table#focus').append(newfocus)
 }
 
 function addExpertise2ToTable(expertise2, id) {
