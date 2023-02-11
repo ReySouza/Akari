@@ -47,6 +47,50 @@
   <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
 </div>
 
+      <div id="addFocusModal" class="modal with-input">
+      <div class="modal-content">
+        <h2>EFEITOS ATIVOS DA ÁRVORE</h2>
+        <hr />
+        <form id="addExpertiseForm" action="">
+          <table class="expertise" id="newexpertise">
+            <tr>
+              <th>Nome</th>
+              <th>Gasto</th>
+              <th>Descrição</th>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="focusName" id="focusName" />
+              </td>
+              <td>
+                <input type="text" name="focusCost" id="focusCost" />
+              </td>
+              <td>
+                <input type="text" name="focusDescription" id="focusDescription" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
+    </div>
+
+ <div class ="focus border">
+          <div class="focusHeader">
+           <h2 class="grid-title">Efeitos Ativos</h2>
+            <button id="addFocus">+</button>
+        <hr />
+           </div>
+        
+         <table class="focus" id="focus">
+            <tr>
+                <th>Nome</th>
+                <th>Gasto</th>
+                <th>Descrição</th>
+            </tr>
+          </table>
+       </div>
+
 <img src="img/SkillTree.png" usemap="#image-map">
 
 <map name="image-map">
