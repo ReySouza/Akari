@@ -228,6 +228,28 @@ const data = {
       description: ' Você drena a energia da estação local para você e seus companheiros podendo gerar: 1d6 de energia sazonal, 2d6 de pontos de fatiga e 3d6 de esoterica/youjutsu, durante 2d6 turnos, a área ficará sem qualquer estação, durante o doyo, aumente 1d6 para cada um destes dados, durante as monsões, diminua 1d6',
     },
   ],
+
+const expertise2Table = document.getElementById("expertise2");
+const expertise2Description = document.getElementById("expertise2-description");
+const sideMenu = document.getElementById("side-menu");
+const closeMenuButton = document.getElementById("close-menu");
+
+const expertise2Template = document.querySelector(".expertise2-item");
+
+for (let i = 0; i < expertise2.length; i++) {
+  const newExpertise2 = expertise2Template.cloneNode(true);
+
+  newExpertise2.querySelector(".expertise2-name").innerHTML = expertise2[i].name;
+  newExpertise2.querySelector(".expertise2-cost").innerHTML = expertise2[i].cost;
+  newExpertise2.querySelector(".expertise2-toggle").addEventListener("click", () => {
+    updateExpertise2Description(i);
+    sideMenu.classList.add("show");
+  });
+
+  expertise2Table.appendChild(newExpertise2);
+}
+
+expertise2Template.remove
    
 }
 
