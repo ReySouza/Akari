@@ -230,35 +230,19 @@ const data = {
   ],
 }
 
-const expertise2Table = document.getElementById("expertise2");
-const expertise2Description = document.getElementById("expertise2-description");
-const sideMenu = document.getElementById("side-menu");
-const closeMenuButton = document.getElementById("close-menu");
-
-const expertise2Template = document.querySelector(".expertise2-item");
-
-for (let i = 0; i < expertise2.length; i++) {
-  const newExpertise2 = expertise2Template.cloneNode(true);
-
-  newExpertise2.querySelector(".expertise2-name").innerHTML = expertise2[i].name;
-  newExpertise2.querySelector(".expertise2-type").innerHTML = expertise[i].type;
-  newExpertise2.querySelector(".expertise2-cost").innerHTML = expertise2[i].cost;
-  newExpertise2.querySelector(".expertise2-damage").innerHTML = expertise[i].damage;
-  newExpertise2.querySelector(".expertise2-time").innerHTML = expertise2[i].time;
-  newExpertise2.querySelector(".expertise2-duration").innerHTML = expertise[i].duration;
-  newExpertise.querySelector(".expertise-toggle").addEventListener("click", () => {
-    updateExpertise2Description(i);
-    toggleSideMenu();
-  });
-
-  expertise2Table.appendChild(newExpertise2);
-}
-
-expertise2Template.remove();
-
-function updateExpertise2Description(index) {
-  expertise2Description.inner
-}
+$('.expertise2-toggle').click(function () {
+  var expertise2Description = $(this).closest('.expertise2-item').find('.expertise2-description').text();
+  var expertise2Name = $(this).closest('.expertise2-item').find('.expertise2-name').text();
+  var sidebar = $('#expertise2-sidebar');
+  
+  if (sidebar.is(':visible')) {
+    sidebar.hide();
+  } else {
+    $('#expertise2-sidebar-title').text(expertise2Name);
+    $('#expertise2-sidebar-description').text(expertise2Description);
+    sidebar.show();
+  }
+});
 
 data.weapons.map((weapon, index) => {
   addWeaponToTable(weapon, index)
