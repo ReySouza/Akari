@@ -230,20 +230,6 @@ const data = {
   ],
 }
 
-$('.expertise2-toggle').click(function () {
-  var expertise2Description = $(this).closest('.expertise2-item').find('.expertise2-description').text();
-  var expertise2Name = $(this).closest('.expertise2-item').find('.expertise2-name').text();
-  var sidebar = $('#expertise2-sidebar');
-  
-  if (sidebar.is(':visible')) {
-    sidebar.hide();
-  } else {
-    $('#expertise2-sidebar-title').text(expertise2Name);
-    $('#expertise2-sidebar-description').text(expertise2Description);
-    sidebar.show();
-  }
-});
-
 data.weapons.map((weapon, index) => {
   addWeaponToTable(weapon, index)
 })
