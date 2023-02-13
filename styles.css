@@ -12,6 +12,52 @@ body {
     font-family: 'Itim', sans-serif;
 }
 
+ header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      header nav {
+        display: flex;
+      }
+
+      header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      header nav li {
+        margin-right: 20px;
+      }
+
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      #toggleButton {
+        background-color: #fff;
+        border: none;
+        color: #333;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      #header nav.visible {
+        display: block;
+      }
+
 hr {
     border-top: 1px solid #a2a2a2;
     width: 90%;
