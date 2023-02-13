@@ -288,14 +288,6 @@ input.addEventListener("input", function(event) {
   console.log(event.target.value);
 });
 
- const toggleButton = document.querySelector("#toggleButton");
-      const header = document.querySelector("#header nav");
-
-      toggleButton.addEventListener("click", function() {
-        header.classList.toggle("visible");
-      });
-
-
 $(window).click(function (event) {
   if (event.target.id == 'diceAttributes') {
     diceModal.css('display', 'none')
