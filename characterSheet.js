@@ -780,7 +780,7 @@ function closeSidebar() {
     let content;
     switch (title) {
       case "A Lenda da Guerreira que Celebra a Maidono":
-        content = "";
+        content = " <button id="toggle-checkmark">Toggle Checkmark</button>";
         break;
       case "A Verdadeira Face do Deus Secreto":
         content = "This is some custom content for the 'A Verdadeira Face do Deus Secreto' section.";
@@ -796,6 +796,24 @@ function closeSidebar() {
       <br></br>
       <br></br>
       <h3>${title}</h3>
+
+    // Get the image map
+    const map = document.querySelector("map");
+    
+    // Add a click event listener to the toggle button
+    document.querySelector("#toggle-checkmark").addEventListener("click", function() {
+      // Get all the area elements within the map
+      const areas = map.querySelectorAll("area");
+      
+      // Loop through each area
+      for (const area of areas) {
+        // Get the checkmark for the current area
+        const checkmark = area.querySelector(".checkmark");
+        
+        // Toggle the checkmark's visibility
+        checkmark.classList.toggle("hidden");
+      }
+    });
       <p>${content}</p>
     `;
   }
