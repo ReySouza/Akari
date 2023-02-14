@@ -685,10 +685,23 @@ function addExpertise2ToTable(expertise2, id) {
         <td>${expertise2.damage}</td>
         <td>${expertise2.time}</td>
         <td>${expertise2.duration}</td>
-        <td>${expertise2.description}</td>
+        <td>${expertise2.penalty}</td>
+        <td>
+            <button onclick="showExpertise2Description(${id})">
+                <i class="fa fa-info-circle"></i>
+            </button>
+        </td>
     </tr>`)
   $('table#expertise2').append(newexpertise2)
 }
+
+function showExpertise2Description(id) {
+  const expertise2 = data.expertise2[id]
+  $('#expertise2DescriptionTitle').text(expertise2.name)
+  $('#expertise2DescriptionText').text(expertise2.description)
+  $('#expertise2DescriptionModal').modal('show')
+}
+
 
 function addAttribute(attribute, id) {
   const newAttribute = $(`<div class="attribute" id="attribute_${id}">
@@ -796,24 +809,5 @@ function closeSidebar() {
       <br></br>
       <br></br>
       <h3>${title}</h3>
-
-    // Get the image map
-    const map = document.querySelector("map");
-    
-    // Add a click event listener to the toggle button
-    document.querySelector("#toggle-checkmark").addEventListener("click", function() {
-      // Get all the area elements within the map
-      const areas = map.querySelectorAll("area");
-      
-      // Loop through each area
-      for (const area of areas) {
-        // Get the checkmark for the current area
-        const checkmark = area.querySelector(".checkmark");
-        
-        // Toggle the checkmark's visibility
-        checkmark.classList.toggle("hidden");
-      }
-    });
-      <p>${content}</p>
     `;
   }
