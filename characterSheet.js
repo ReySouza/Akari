@@ -780,7 +780,7 @@ function closeSidebar() {
     let content;
     switch (title) {
       case "A Lenda da Guerreira que Celebra a Maidono":
-        content = " <button id="toggle-checkmark">Toggle Checkmark</button>";
+        content = "";
         break;
       case "A Verdadeira Face do Deus Secreto":
         content = "This is some custom content for the 'A Verdadeira Face do Deus Secreto' section.";
