@@ -790,14 +790,149 @@ function closeSidebar() {
   function updateSidebarContent(title) {
     let content;
     switch (title) {
-      case "A Lenda da Guerreira que Celebra a Maidono":
+      case "A Verdadeira Face do Deus Secreto":
         content = "";
         break;
-      case "A Verdadeira Face do Deus Secreto":
-        content = "This is some custom content for the 'A Verdadeira Face do Deus Secreto' section.";
-        break;
       case "Fé Nativa em meio a terra morta":
-        content = "This is some custom content for the 'Fé Nativa em meio a terra morta' section.";
+        content = "";
+        break;
+      case "Virtudes de Liderança":
+        content = "";
+        break;
+      case "Dextreza":
+        content = "";
+        break;
+      case "Força":
+        content = "";
+        break;
+      case "Saúde":
+        content = "";
+        break;
+      case "Inteligência":
+        content = "";
+        break;
+      case "Paraiso Terreno":
+        content = "";
+        break;
+      case "Dominadora da Terra":
+        content = "";
+        break;
+      case "O Mundo Sangra com Basalto":
+        content = "";
+        break;
+      case "Os Espíritos da Terra Ascendem":
+        content = "";
+        break;
+      case "Espada de Kun":
+        content = "";
+        break;
+      case "Rocha que Acalma a Terra":
+        content = "";
+        break;
+      case "Os 6 Terremotos":
+        content = "";
+        break;
+      case "Os Céus se Erguem do Continente":
+        content = "";
+        break;
+      case "Pilares de Punição Divina":
+        content = "";
+        break;
+      case "O Fim de um Mundo Vagaroso":
+        content = "";
+        break;
+      case "Toda a terra está sob meu alcance":
+        content = "";
+        break;
+      case "O Solo do Monte Tai nunca se desfaz":
+        content = "";
+        break;
+      case "Teatro Infernal Secreto":
+        content = "";
+        break;
+      case "A Fronteira entre as Estações":
+        content = "";
+        break;
+      case "Jade do rio Horrivel":
+        content = "";
+        break;
+      case "Morte do Cedar do Destino":
+        content = "";
+        break;
+      case "Receptáculo de um poder divino":
+        content = "";
+        break;
+      case "Shichiseiken e o pacto secreto":
+        content = "";
+        break;
+      case "Borboletas de uma terra desolada":
+        content = "";
+        break;
+      case "A ordem da espada de sete estrelas":
+        content = "";
+        break;
+      case "Deuses de terras distantes":
+        content = "";
+        break;
+      case "Hyakki Yagyo":
+        content = "";
+        break;
+      case "Maldição Celestial":
+        content = "";
+        break;
+      case "Nictofobia":
+        content = "";
+        break;
+      case "Contrato Espectral":
+        content = "";
+        break;
+      case "Pedido Impossivel: Colar do ninho do pardal":
+        content = "";
+        break;
+      case "Saigyo-hime":
+        content = "";
+        break;
+      case "Perda de si":
+        content = "";
+        break;
+      case "O Sapo é comido pela cobra":
+        content = "";
+        break;
+      case "A Travessia dos deuses":
+        content = "";
+        break;
+      case "Guardiões do Paraiso":
+        content = "";
+        break;
+      case "Sapo de Hourai":
+        content = "";
+        break;
+      case "Honrado Mito Central":
+        content = "";
+        break;
+      case "Sagrado Mito Nativo":
+        content = "";
+        break;
+      case "O Anel de Ferro":
+        content = "";
+        break;
+      case "O Milagre de Otensui":
+        content = "";
+        break;
+      case "Sete Pedras e Sete árvores":
+        content = "";
+        break;
+      case "Autoridade Sagrada dos Deuses":
+        content = "";
+        break;
+      case "Vida longa ao clã (Moriya)":
+        content = "";
+        break;
+      case "Vida longa ao clã (Suwa)":
+        content = "";
+        break;
+      case "Terra Desolada":
+        content = "";
         break;
       default:
         content = "This is some default content for an undefined section.";
