@@ -791,7 +791,7 @@ function closeSidebar() {
     let content;
     switch (title) {
       case "A Verdadeira Face do Deus Secreto":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Nenhum <br> No antigo Mausoléu Umebachi-Goryo, na vila destruída de Taishi, vocês fizeram uma descoberta incrivel, vocês libertaram uma nova força ao mundo, o Deus Secreto, absoluto em seu poder e supremo em sua sagacidade estará cada vez mais próximo de vocês, sintam seu poder correndo por tuas veias e vejam a natureza respirar e a energia se movimentar";
         break;
       case "Fé Nativa em meio a terra morta":
         content = "";
@@ -829,59 +829,35 @@ function closeSidebar() {
       case "Rocha que Acalma a Terra":
         content = "";
         break;
-      case "Os 6 Terremotos":
-        content = "";
-        break;
-      case "Os Céus se Erguem do Continente":
-        content = "";
-        break;
-      case "Pilares de Punição Divina":
-        content = "";
-        break;
-      case "O Fim de um Mundo Vagaroso":
-        content = "";
-        break;
-      case "Toda a terra está sob meu alcance":
-        content = "";
-        break;
-      case "O Solo do Monte Tai nunca se desfaz":
-        content = "";
-        break;
       case "Teatro Infernal Secreto":
-        content = "";
+        content = "Gasto: 1 PF <br> Requisito: Nenhum <br> Vamos recapitular o que sabemos sobre o Deus Secreto, ele possui uma conexão com a constelação de sete estrelas, isso pode ser visto pela abundância de símbolos desta constelação em tudo que está relacionado a este Deus, a presença desta constelação também te faz pensar sobre a relação dele com a espada de sete estrelas, a shichiseiken, por ultimo, também é importante destacar a relação dele com o Teatro Noh e especialmente com as máscaras de Okinamen, utilizadas em algumas peças de teatro específicas ";
         break;
       case "A Fronteira entre as Estações":
-        content = "";
+        content = "Gasto: 2 PF <br> Requisito: Nenhum <br> A estação do Doyo ocorre na fronteira entre o Outono e a primavera, representando a antitese da epoca de monsões. Este é um período onde a terra morre, a natureza está em seu período de menor energia. Durante esta estação, algumas práticas comuns no Japão envolvem comer comidas específicas como enguia e grão de soja verde, além disso, as pessoas também visitam templos para rezar por boa saude e se banhar em cachoeiras para se purificar. Você percebe que o efeito de Doyo em você não é tão notável quanto o resto dos seus companheiros, a estação não se manifesta como brasas e labaredas enormes como é o resto, mas como um enorme portal negro que drena a energia das outras estações, anulando seus efeitos<br> Ao comprar este foco, você poderá drenar a energia da estação atual, durante 1d6 turnos, o campo de batalha ficará sem qualquer efeito sazonal, tome cuidado ao usar essa habilidade, pois você estará retirando toda a energia da natureza, então tudo que estiver em volta de você que for uma planta ou um animal selvagem irá morrer";
         break;
       case "Jade do rio Horrivel":
-        content = "";
+        content = "Gasto: 4 PF <br> Requisito: Nenhum <br> Os rios que passam pela região de Chubu, incluindo Suwa, são afluentes do rio Himekawa que recebeu o apelido de 'Rio Horrivel (姫川)' pela sua tendência a gerar enchentes, este rio também é famoso por se tratar da maior fonte de Jadeíta no leste asiático, boa parte das riquezas minerais em Suwa e o tesouro acumulado pelo Daimyo veio desta Jade, produzida nas profundezas da terra e então trazida de volta para a superfície <br> Ao comprar este foco, você poderá envolver qualquer ataque seu que utiliza rochas e solo em uma capa cristalina de Jadeíta. Esta capa irá aumentar o dano do ataque, mas também seu peso e seu alcance";
         break;
       case "Morte do Cedar do Destino":
-        content = "";
+        content = "Gasto: 4 PF <br> Requisito: Nenhum <br> ";
         break;
       case "Receptáculo de um poder divino":
-        content = "";
+        content = "Gasto: 3 PF <br> Requisito: Conhecer o Deus Secreto <br> Conforme a sua aventura avança, você entrar em contato com diversos Deuses, alguns deles que você nem sabia que existiam, mas esse tempo todo, havia um Deus que você simplesmente nunca tentou estabelecer uma conexão mais formal. O Deus Secreto, você agora se vê frente a frente com ele, essa talvez seja sua unica chance de fazer a oferta <br> Ao comprar este foco, você poderá tentar convencer o Deus Secreto a formar uma pacto com você, se ele aceitar, você poderá adicionar uma habilidade nova relacionada ao Deus ";
         break;
       case "Shichiseiken e o pacto secreto":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Traduzir os documentos encontrados no Mausoléu <br><br> Finalmente o nome verdadeiro do Deus secreto foi revelado, porém ainda não é possível determinar a razão para ele estar se envolvendo com a Shichiseiken e o Principe Shotoku, é necessário investigar mais a fundo";
         break;
       case "Borboletas de uma terra desolada":
-        content = "";
-        break;
-      case "A ordem da espada de sete estrelas":
-        content = "";
-        break;
-      case "Deuses de terras distantes":
-        content = "";
+        content = "Gasto: 3 PF <br> Requisito: Traduzir os documentos encontrados no Mausoléu <br> Este foco é mutualmente exclusivo com Receptáculo de um poder divino <br> Quando você era menor e estava recebendo suas primeiras instruções sobre o Shintoísmo, você lembra de ter ouvido falar que a quase mil anos atrás, um pequeno vilarejo formou um culto para adorar um inseto, eles o chamaram de Tokoyo no Kami, ou Deus do mundo eterno. Você lembra de mencionarem que este inseto era uma borboleta Swallowtail. De qualquer forma, este culto teria sido completamente demolido, e desde então, você nunca teria ouvido falar deste Deus  ";
         break;
       case "Hyakki Yagyo":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Nenhum <br> Pouco antes de vocês se encontrarem, um livro chamado Shūgaishō, cujo autor é desconhecido, continha instruções sobre como sobreviver ao Hyakki Yagyo, caso ele viesse a ocorrer. A instrução é não sair de casa em hipotése alguma e aqueles que ouvirem o desfile, devem conjurar estas palavras <br><br> KA-TA-SHI-HA-YA, E-KA-SE-NI-KU-RI-NI, TA-ME-RU-SA-KE, TE-E-HI, A-SHI-E-HI, WA-RE-SHI-KO-NI-KE-RI. Talvez seja tarde demais para isso";
         break;
       case "Maldição Celestial":
-        content = "";
+        content = "Gasto: 2 PF (Coletivo) <br> Requisito: Nenhum <br> Não é possível que tudo tenha sido uma coincidência, o roubo da Shichiseiken e o ataque em Naniwa devem estar relacionados de alguma forma, tudo foi planejado, a vinda do imperador, o fluxo de Youkais nunca vistos antes no dia do festival de Tsukimi, o festival da Lua. Alguma coisa está prestes a acontecer e vocês são os catalisadores para o cataclisma";
         break;
       case "Nictofobia":
-        content = "";
+        content = "Gasto: 3 PF <br> Requisito: Descobrir quem pegou a espada de Sete Estrelas <br><br><br> A morte não é uma escapatória";
         break;
       case "Contrato Espectral":
         content = "Gasto: 3 PF <br> Requisito: Nenhum <br> Mikito, seu parceiro, possui uma história bem inusitada, você sabe sobre a queda da árvore e como ele teria morrido, entretanto, existe algo a mais nessa história, algo que talvez você não saiba ainda. Apesar de vocês já andaram juntos a um bom tempo, ele ainda é um personagem bem misterioso";
