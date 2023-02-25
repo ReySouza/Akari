@@ -884,55 +884,37 @@ function closeSidebar() {
         content = "";
         break;
       case "Contrato Espectral":
-        content = "";
+        content = "Gasto: 3 PF <br> Requisito: Nenhum <br> Mikito, seu parceiro, possui uma história bem inusitada, você sabe sobre a queda da árvore e como ele teria morrido, entretanto, existe algo a mais nessa história, algo que talvez você não saiba ainda. Apesar de vocês já andaram juntos a um bom tempo, ele ainda é um personagem bem misterioso";
         break;
       case "Pedido Impossivel: Colar do ninho do pardal":
-        content = "";
-        break;
-      case "Saigyo-hime":
-        content = "";
-        break;
-      case "Perda de si":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Nenhum <br> Na fantástica história da Princesa Kaguya, ela exigiu que seus pretendentes viajassem por todos os cantos do planeta atrás de items mágicos, ela sabia que os homens não sobreviveriam a viagem e que os itens poderiam até mesmo não existir, um deste itens era um colar feito com o casco de um cowrie retirado do ninho de um pardal. Este pedido a primeira vista poderia parecer absurdo, mas na epoca, existiam lendas que contavam que o casco de um cowrie, um tipo de caracol marinho, poderia servir como um amuleto utilizado por mães para que seus partos sejam seguros. Kaguya queria um colar deste tipo utilizado por um pardal ao botar seus ovos. Você acredita que consegue obter este colar com a ajuda de sua metade fantasma ";
         break;
       case "O Sapo é comido pela cobra":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Nenhum <br> O ritual de caça aos sapos é tipicamente feito no Templo Superior de Suwa durante a epoca de Inverno, durante este ritual, os sapos que ficam na beira do lago e foram congelados são trazidos para o templo, as mikos então disparam flechas contra eles e então os oferecem para Takeminakata. As origens e o propósito deste ritual foram perdidos, mas algumas fontes que podem ser encontradas na biblioteca do templo afirmam que ele se trata de uma celebração da vitória de Takeminakata sob um Deus Sapo que vivia na região ";
         break;
       case "A Travessia dos deuses":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Restaurar a Omiwatari <br> Omiwatari ou Travessia dos Deuses é o nome dado a uma fenda formada no Lago Suwa durante o Inverno. As lendas locais contam que essas rachaduras são formadas quando Takeminakata deixa o Templo Inferior e anda sob o gelo para encontrar sua esposa, Yasakatome que vive na outra margem. Esta maravilha do Templo de Suwa está em ruinas por uma razão que você ainda não entende bem, talvez a resposta possa estar no templo Inferior ";
         break;
       case "Guardiões do Paraiso":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Trazer Tenaga e Ashinaga de volta a vida <br> Tenaga e Ashinaga são dois gigantes que guardam os templos de Suwa, Tenaga (手長) possui braços enormes enquanto Ashinaga (足長) possui pernas longas. Eles tipicamente guardavam o templo Superior só que este está completamente lacrado por um selo mágico. Talvez seja melhor procurar informações em outros lugares onde eles são adorados";
         break;
       case "Sapo de Hourai":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Explorar os dois templos <br> Você está cada vez mais próximo de descobrir o que realmente está acontecendo em Suwa, as escritas encontradas nos dois templos contam uma história Milenar, um conflito entre duas divindades poderosas, uma gema de Jade e uma gama de espíritos vingativos. Continue em frente, descubra a verdade escondida pela corte imperial de Suwa e pelo Deus que jurou proteger esta vila";
         break;
       case "Honrado Mito Central":
-        content = "";
+        content = "Gasto: 2 PF <br> Requisito: Nenhum <br> Este foco é mutualmente exclusivo com Sagrado Mito Nativo <br> Não se sinta acuado, não fique com medo, tudo é muito mais complexo do que parece. Não tente resolver este quebra-cabeça somente com as peças que você tem agora";
         break;
       case "Sagrado Mito Nativo":
-        content = "";
+        content = "Gasto: 2 PF <br> Requisito: Nenhum <br> Este foco é mutualmente exclusivo com Sagrado Mito Nativo <br> Não se sinta acuado, não fique com medo, tudo é muito mais complexo do que parece. Não tente resolver este quebra-cabeça somente com as peças que você tem agora";
         break;
       case "O Anel de Ferro":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Encontrar O Anel de Ferro <br> Dentro do templo Superior, nas profundezas, um artefato estranho pode ser encontrado, são diversos aros de ferro, muito enferrujados, com serras ao longo de sua superfície. Você não sabe a origem destes aros e nem se eles teriam sido usados por algum antepassado seu ou se seriam uma arma divina de Takeminakata ";
         break;
       case "O Milagre de Otensui":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Restaurar a água de Otensui <br> Hoden no tenteki ou a gota de água divina de Hoden é uma das grandes maravilhas do Templo Superior de Suwa. 3 gotas de água caem sob um pequeno templo conhecido com Tenryusuisha todo dia, na mesma hora, não importa o clima. Esta água antes era conhecida como Otensui (água celestial), colheitas irrigadas com ela nunca morrem, e orações para chuva feitas com ela sempre funcionam. Porém, aquele fluxo de água negra que vocês encontraram enquanto estavam chegando em Suwa parece ter contaminado este pequeno corrego, a água agora está fedorenta e viscosa";
         break;
       case "Sete Pedras e Sete árvores":
-        content = "";
-        break;
-      case "Autoridade Sagrada dos Deuses":
-        content = "";
-        break;
-      case "Vida longa ao clã (Moriya)":
-        content = "";
-        break;
-      case "Vida longa ao clã (Suwa)":
-        content = "";
-        break;
-      case "Terra Desolada":
-        content = "";
+        content = "Gasto: 2 PF <br> Requisito: Restaurar o Cedro do Destino <br> Musubi no Sugi, o Cedro do Destino ou Cedro do Casamento é uma árvore gigante localizada no templo Inferior de Suwa, manter esta árvore é extremamente importante pois garante que Takeminakata possa ver o mundo e se comunicar com seus sacerdotes, independente de onde estejam ";
         break;
       default:
         content = "This is some default content for an undefined section.";
