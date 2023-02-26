@@ -893,7 +893,7 @@ function closeSidebar() {
         content = "Gasto: 2 PF <br> Requisito: Restaurar o Cedro do Destino <br> Musubi no Sugi, o Cedro do Destino ou Cedro do Casamento é uma árvore gigante localizada no templo Inferior de Suwa, manter esta árvore é extremamente importante pois garante que Takeminakata possa ver o mundo e se comunicar com seus sacerdotes, independente de onde estejam ";
         break;
       default:
-        content = "This is some default content for an undefined section.";
+        content = "Se você achou esse foco, ele está trancado (ou você achou um bug)";
     }
     sidebar.innerHTML = `
       <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
