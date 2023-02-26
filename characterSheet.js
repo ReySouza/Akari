@@ -794,40 +794,40 @@ function closeSidebar() {
         content = "Gasto: Livre <br> Requisito: Nenhum <br> No antigo Mausoléu Umebachi-Goryo, na vila destruída de Taishi, vocês fizeram uma descoberta incrivel, vocês libertaram uma nova força ao mundo, o Deus Secreto, absoluto em seu poder e supremo em sua sagacidade estará cada vez mais próximo de vocês, sintam seu poder correndo por tuas veias e vejam a natureza respirar e a energia se movimentar";
         break;
       case "Fé Nativa em meio a terra morta":
-        content = "";
+        content = "Gasto: 3 PF <br> Requisito: Nenhum <br> Dentro do panteão de Suwa, existem referências a um antigo Deus que vivia antes de Takeminakata, este Deus era representado como uma serpente gigante e era capaz de devastar a terra com maldições e pragas, sua principal função era equilibrar o poder criativo dos demais Deuses e garantir que Suwa permanecesse em equilíbrio. Algo muito parecido com o que você faz com sua estação, o Doyo. Infelizmente, o culto a este Deus desapareceu da face da terra, nenhum rastro tem sido encontrado desde então, algumas teorias afirmam que este Deus teria sido morto por Takeminakata quando este se estabeleceu como Suwa-Daimyojin <br> Ao comprar este foco, você ganhará 5 pontos sazonais";
         break;
       case "Virtudes de Liderança":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Nenhum <br> O Clã Suwa já teve um grau muito maior de independência do que ele tem agora, no passado, há pelo menos 300 anos atrás, ele era um clã completamente independente e que até disputava suas próprias guerras de conquistas contra outros. A derrota contra os Uesugi foi absolutamente brutal, o seu povo foi colocado em um estado de vassalagem e agora está sendo enviado para o sul para morrer pelos senhores de Uesugi. Se a independencia algum dia chegar, ela irá depender de diversas habilidades específicas";
         break;
       case "Dextreza":
-        content = "";
+        content = "Gasto: 3 PF <br> Requisito: Nenhum <br> Ao comprar este foco, você terá uma facilidade maior para desviar de ataques, adicione +1 para seu valor de esquiva ";
         break;
       case "Força":
-        content = "";
+        content = "Gasto: 3 PF <br> Requisito: Nenhum <br> Ao comprar este foco, você sentirá uma facilidade maior para usar habilidades de defesa ativa, adicione +1 para seu valor de parry";
         break;
       case "Saúde":
-        content = "";
+        content = "Gasto: 3 PF <br> Requisito: Nenhum <br> Ao comprar este foco, você irá perceber que seu corpo será mais resiliente e forte, adicione +1 para bloqueio";
         break;
       case "Inteligência":
-        content = "";
+        content = "Gasto: 3 PF <br> Requisito: Nenhum <br> Ao comprar este foco, você irá expandir seus conhecimentos, você ganhará conhecimento regional sobre toda região de Chubu e poderá adicionar 1 vantagem de graça no valor de até 10 pontos";
         break;
       case "Paraiso Terreno":
-        content = "";
+        content = "Gasto: Livre <br> Requisito: Nenhum <br> Os poderes que você adquiriu ao longo da sua formação como Miko podem parecer bem intuitivos e simples a primeira vista, mas a realidade é que esotericamente, eles são muito mais complexos. A habilidade de mover a terra pode ser melhor descrita como a habilidade de criar Kun (坤). Kun é associada com aceitaçãao, devoção, flexibilidade e sutileza, é o ato de reagir a ação dos outros ao invés de agir primeiro. Este elemento é colocado em oposição direta ao Qian (乾) que se refere ao céu e atua como uma força criativa, destrutiva e natural";
         break;
       case "Dominadora da Terra":
-        content = "";
+        content = "Gasto: 2 PF <br> Requisito: Nenhum <br> Dominar a terra significa muito mais do que apenas movimentar o solo e as rochas, é saber controlar o equílibrio entre aquelas duas forças mencionadas anteriormente, Kun e Qian, a fronteira entre estas duas forças precisará sempre permanecer clara e definida para que a natureza se mantenha em um estado de harmonia. Porém existe algo a mais, lí (離) se refere a fogo, mas também pode ser usado para representar pessoas, o solo é repleto de espíritos, seja de animais que já morreram a milhões de anos quanto de humanos, todos estes espíritos estão adormecidos no chão, eles também entram no equílibrio mencionado anteriormente. Dessa forma, controlar a terra envolve conhecer o estado de espírito da Terra, do Ar e dos Espíritos  <br> Ao comprar este foco, você conseguirá 10 pontos de esoterica";
         break;
       case "O Mundo Sangra com Basalto":
-        content = "";
+        content = "Gasto: 4 PF <br> Requisito: Obter a Jade de Suwa <br> Este foco é mutualmente exclusivo com Os espíritos da terra ascendem <br> Olhando de volta para aquele elemento Lí, As ilhas do Japão são repletas de vulcões, muitos deles estão em um estado constante de erupção e nas profundezas absolutas, a quilômetros da superfície, as rochas são derretidas e fundidas para gerar os diversos cristais e gemas que vemos na superfície. Geologicamente falando, a Jade ou Jadeíta se forma apenas em zonas de subducção, regiões onde hoje estão as principais montanhas do Japão, os rios erodem essas montanhas ao longo de milhões de anos e esses minerais rarissimos como a Jade acabam parando na margem das águas <br> Ao comprar este foco, você irá orientar suas habilidades ao redor de vulcões e erupções vulcânicas ";
         break;
       case "Os Espíritos da Terra Ascendem":
-        content = "";
+        content = "Gasto: 4 PF <br> Requisito: Obter um contato com Takemikazuchi <br> Este foco é mutualmente exclusivo com O mundo sangra com Basalto <br> Takemikazuchi é uma figura intimamente relacionada a você, ele foi o grande responsável pela migração de Takeminakata para Suwa e o estabelecimento do reinado dos Deuses celestiais. Existe outra história famosa relacionada a este Deus, é como ele um peixe gato chamado Namazu que causava diversos terremotos no Japão, esta história ficou tão famosa que em algumas fontes, o peixe-gato se tornou uma espécie de servo para o Deus<br> Ao comprar este foco, Takemikazuchi poderá lhe conceder habilidades relacionadas a tremores de terra";
         break;
       case "Espada de Kun":
-        content = "";
+        content = "Gasto: 4 PF <br> Requisito: Encontrar vestígios do antigo clã Nawi <br> Existe uma antiga lenda sobre dois clãs que viviam no período Nara, o clã Nawi e os seus servos do clã Hinanawi, um dia, o clã Nawi acabou morrendo, eles foram canonizados como espíritos divinos e se tornaram os Nawi-no-kami. Quando isso ocorreu, os membros do clã Hinanawi ascenderam aos céus pelo seu serviço e se tornaram celestiais. O clã Hinanawi era infame no céu por não treinar e nem fortalecer seus espíritos. Quando o Rei Dragão visitou o clã para verificar o que havia ocorrido, ele descobriu que os Hinanawi possuiam uma espada capaz de juntar e acumular espíritos e converter em energia. A espada pode então identificar o espírito absorvido e se adaptar para encontrar suas fraquezas. Por causa desse artefato extraordinário, o Dragão-Rei permitiu que continuassem vivendo nos céus, o clã passaria a utilizar a espada de Hisou para ler os espíritos na atmosfera e no ar para controlar o clima e evitar terremotos<br> Ao comprar este foco, você terá acesso a versões melhoradas de suas vantagens relacionadas a terra e a comunicação com espíritos";
         break;
       case "Rocha que Acalma a Terra":
-        content = "";
+        content = "Gasto: 2 PF <br> Requisito: Nenhum <br> Algumas lendas contam que quando os Deuses celestiais separaram o céu e a terra, eles instalaram algumas rochas no formato de chave que ficariam presas na terra, impedindo que ela saisse do lugar, ele então moveu o céu para cima, separando os dois. Essas chaves chamadas de Kaname são enroladas em shimenawa e seguram todos os continentes juntos. Toda vez que uma dessas chaves se movesse debaixo da terra ou fosse removida, um terremoto ocorreria. Os Hinanawis eram os unicos que conseguiam usar essas chaves como arma por conta de sua habilidade magnifica de controlar o Kun, o Qian e o Lí. Talvez você conseguiria aprender com eles, se tivesse a oportunidade de visita-los";
         break;
       case "Teatro Infernal Secreto":
         content = "Gasto: 1 PF <br> Requisito: Nenhum <br> Vamos recapitular o que sabemos sobre o Deus Secreto, ele possui uma conexão com a constelação de sete estrelas, isso pode ser visto pela abundância de símbolos desta constelação em tudo que está relacionado a este Deus, a presença desta constelação também te faz pensar sobre a relação dele com a espada de sete estrelas, a shichiseiken, por ultimo, também é importante destacar a relação dele com o Teatro Noh e especialmente com as máscaras de Okinamen, utilizadas em algumas peças de teatro específicas ";
@@ -839,7 +839,7 @@ function closeSidebar() {
         content = "Gasto: 4 PF <br> Requisito: Nenhum <br> Os rios que passam pela região de Chubu, incluindo Suwa, são afluentes do rio Himekawa que recebeu o apelido de 'Rio Horrivel (姫川)' pela sua tendência a gerar enchentes, este rio também é famoso por se tratar da maior fonte de Jadeíta no leste asiático, boa parte das riquezas minerais em Suwa e o tesouro acumulado pelo Daimyo veio desta Jade, produzida nas profundezas da terra e então trazida de volta para a superfície <br> Ao comprar este foco, você poderá envolver qualquer ataque seu que utiliza rochas e solo em uma capa cristalina de Jadeíta. Esta capa irá aumentar o dano do ataque, mas também seu peso e seu alcance";
         break;
       case "Morte do Cedar do Destino":
-        content = "Gasto: 4 PF <br> Requisito: Nenhum <br> ";
+        content = "Gasto: 4 PF <br> Requisito: Nenhum <br> O cedro do destino é apenas uma parte do complexo enorme de objetos sagrados que existem no complexo. Atualmente, existem pelo menos 7 árvores e 7 rochas consideradas sagradas, elas receberam este reconhecimento por terem sido geradas por Takeminakata ou por serem importantes depósitos de Jade <br> Ao comprar este foco, você pode orientar os seus poderes e obter um certo controle sobre as plantas, podendo fazer elas cresceram e até mesmo usar las como armas";
         break;
       case "Receptáculo de um poder divino":
         content = "Gasto: 3 PF <br> Requisito: Conhecer o Deus Secreto <br> Conforme a sua aventura avança, você entrar em contato com diversos Deuses, alguns deles que você nem sabia que existiam, mas esse tempo todo, havia um Deus que você simplesmente nunca tentou estabelecer uma conexão mais formal. O Deus Secreto, você agora se vê frente a frente com ele, essa talvez seja sua unica chance de fazer a oferta <br> Ao comprar este foco, você poderá tentar convencer o Deus Secreto a formar uma pacto com você, se ele aceitar, você poderá adicionar uma habilidade nova relacionada ao Deus ";
