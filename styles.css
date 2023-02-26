@@ -793,7 +793,7 @@ nav{
 
 /*Buttons Styling*/
 
-.convertNumber(){
+.login-button{
     padding: 0.6rem 0.8rem;
     margin-left: 2vw;
     font-size:1rem;
@@ -803,12 +803,13 @@ nav{
     border-radius: 2em;
 }
 
-.convertNumber():hover{
+.login-button:hover{
     color:#fff;
-    background-color: #ff0000;
-    border:1.5px solid #ff0000;
+    background-color: #ff0202;
+    border:1.5px solid #ff0202;
     transition: all ease-in-out 350ms;
 }
+
 
 /*Navigation Icon Styling*/
 
