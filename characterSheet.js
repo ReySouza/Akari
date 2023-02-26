@@ -790,6 +790,9 @@ function closeSidebar() {
   function updateSidebarContent(title) {
     let content;
     switch (title) {
+      case: "A Lenda da Guerreira que Celebra a Maidono":
+        content = "Gasto: Livre <br> Requisito: Nenhum <br> Sob o nome de tudo que é divino, nós oramos para que este mundo seja purificado e se torne sagrado. Nós oramos para que a graça divina a nós seja concedida e a todas as coisas que existe, enquanto criamos e moldamos esta terra.  ";
+         break;
       case "A Verdadeira Face do Deus Secreto":
         content = "Gasto: Livre <br> Requisito: Nenhum <br> No antigo Mausoléu Umebachi-Goryo, na vila destruída de Taishi, vocês fizeram uma descoberta incrivel, vocês libertaram uma nova força ao mundo, o Deus Secreto, absoluto em seu poder e supremo em sua sagacidade estará cada vez mais próximo de vocês, sintam seu poder correndo por tuas veias e vejam a natureza respirar e a energia se movimentar";
         break;
