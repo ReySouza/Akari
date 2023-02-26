@@ -790,7 +790,7 @@ function closeSidebar() {
   function updateSidebarContent(title) {
     let content;
     switch (title) {
-      case: "A Lenda da Guerreira que Celebra a Maidono":
+      case "A Lenda da Guerreira que Celebra a Maidono":
         content = "Gasto: Livre <br> Requisito: Nenhum <br> Sob o nome de tudo que é divino, nós oramos para que este mundo seja purificado e se torne sagrado. Nós oramos para que a graça divina a nós seja concedida e a todas as coisas que existe, enquanto criamos e moldamos esta terra.  ";
          break;
       case "A Verdadeira Face do Deus Secreto":
